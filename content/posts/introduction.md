@@ -1,11 +1,11 @@
 ---
 title: "Getting Started"
-date: 2020-12-18T12:52:59+03:00
+date: 2020-12-12T12:52:59+03:00
 draft: false
 ---
 
 
-# React Native Offline First and sync
+# React Native Offline First and sync Library
 
 This project is a library that implements an offline first approach with SQLite and React Native (featuring TypeScript and CocoaPods under the hood). Once authorized, the database can be synced between multiple devices. 
 
