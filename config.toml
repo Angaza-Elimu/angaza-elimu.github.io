@@ -1,0 +1,4 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "React-Offline-Sync"
+theme = "color-your-world"
