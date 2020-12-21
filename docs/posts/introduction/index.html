@@ -130,7 +130,7 @@
       "inLanguage": "en",
       "datePublished": "2020-12-18",
       "dateModified": "2020-12-18",
-      "wordCount" : "0",
+      "wordCount" : "225",
       "publisher": {
         "@type": "Person",
         "name": ""
@@ -312,6 +312,139 @@ console.log("Mode changed to 'dark' in OS level.");};updateAccent()};PREFERS_LIG
 
 
 
+
+
+
+
+
+  <h1 id="react-native-offline-first-and-sync">React Native Offline First and sync</h1> 
+
+<p>This project is a library that implements an offline first approach with SQLite and React Native (featuring TypeScript and CocoaPods under the hood). Once authorized, the database can be synced between multiple devices.</p>
+<p>These instructions only cover iOS usage at this time.</p>
+
+
+
+
+
+  <h2 id="install-js-dependencies"><a class="anchor" href="#install-js-dependencies" title='Anchor for "Install JS dependencies".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Install JS dependencies</h2> 
+
+<pre aria-label="Box containing code sample." tabindex=0><code>npm install
+</code></pre>
+
+
+
+
+
+  <h2 id="install-ios-dependencies-requires-cocoapodshttpscocoapodsorg"><a class="anchor" href="#install-ios-dependencies-requires-cocoapodshttpscocoapodsorg" title='Anchor for "Install iOS dependencies (requires Cocoapods)".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Install iOS dependencies (requires <a href="https://cocoapods.org/">Cocoapods</a>)</h2> 
+
+<pre aria-label="Box containing code sample." tabindex=0><code>pushd ios/
+pod install
+popd
+</code></pre>
+
+
+
+
+
+  <h2 id="start-the-react-native-metro-bundler"><a class="anchor" href="#start-the-react-native-metro-bundler" title='Anchor for "Start the React Native Metro Bundler".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Start the React Native Metro Bundler</h2> 
+
+<pre aria-label="Box containing code sample." tabindex=0><code>npm start
+</code></pre>
+
+
+
+
+
+  <h2 id="compile-typescript-source-in-watch-mode"><a class="anchor" href="#compile-typescript-source-in-watch-mode" title='Anchor for "Compile TypeScript source in watch mode".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Compile TypeScript source in watch mode</h2> 
+
+<pre aria-label="Box containing code sample." tabindex=0><code>npm run tsc -- -w
+</code></pre>
+
+
+
+
+
+  <h2 id="run-the-jest-tests-in-watch-mode"><a class="anchor" href="#run-the-jest-tests-in-watch-mode" title='Anchor for "Run the Jest tests in watch mode".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Run the Jest tests in watch mode</h2> 
+
+<pre aria-label="Box containing code sample." tabindex=0><code>npm test
+</code></pre>
+
+
+
+
+
+  <h2 id="open-the-source-in-vs-code"><a class="anchor" href="#open-the-source-in-vs-code" title='Anchor for "Open the source in VS Code".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Open the source in VS Code</h2> 
+
+<pre aria-label="Box containing code sample." tabindex=0><code>code .
+</code></pre>
+
+
+
+
+
+  <h2 id="run-and-debug-on-an-ios-simulator"><a class="anchor" href="#run-and-debug-on-an-ios-simulator" title='Anchor for "Run (and debug) on an iOS simulator".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Run (and debug) on an iOS simulator</h2> 
+
+<p>With the &ldquo;React Native Tools&rdquo; VSCode extension installed, open the Debug tab and press the &ldquo;Play&rdquo; button with &ldquo;Debug iOS&rdquo; selected in the dropdown.</p>
+<p>When the simulator opens, press Command-D to open the developer menu. Tap &ldquo;Debug JS Remotely&rdquo; to connect VSCode to the app and enable debugging.</p>
+<p>Alternatively:</p>
+<pre aria-label="Box containing code sample." tabindex=0><code>open ios/RNSQLiteDemo.xcworkspace
+</code></pre>
+<p>Select a simulator of your choice. Press the &ldquo;run&rdquo; button.</p>
+
+
+
+
+
+  <h2 id="e2e-testing-with-detox"><a class="anchor" href="#e2e-testing-with-detox" title='Anchor for "E2E Testing with Detox".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> E2E Testing with Detox</h2> 
+
+<p>End-to-end testing happens from within the <code>e2e/</code> directory:</p>
+<pre aria-label="Box containing code sample." tabindex=0><code>cd e2e/
+npm install
+</code></pre>
+
+
+
+
+
+  <h4 id="build-e2e-tests"><a class="anchor" href="#build-e2e-tests" title='Anchor for "Build E2E tests".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Build E2E tests</h4> 
+
+<pre aria-label="Box containing code sample." tabindex=0><code>npm run test:e2e:build
+</code></pre>
+
+
+
+
+
+  <h4 id="run-e2e-tests"><a class="anchor" href="#run-e2e-tests" title='Anchor for "Run E2E tests".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Run E2E tests</h4> 
+
+<pre aria-label="Box containing code sample." tabindex=0><code>npm run test:e2e
+</code></pre>
+
+
+
+
+
+  <h4 id="run-tests-without-reinstalling-onto-the-simulator"><a class="anchor" href="#run-tests-without-reinstalling-onto-the-simulator" title='Anchor for "Run tests without reinstalling onto the Simulator".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Run tests without reinstalling onto the Simulator</h4> 
+
+<p>Details on this workflow can be <a href="https://github.com/wix/Detox/blob/master/docs/Guide.DevelopingWhileWritingTests.md">found here</a>:</p>
+<pre aria-label="Box containing code sample." tabindex=0><code>npm run test:e2e:reuse
+</code></pre>
+
+
+
+
+
+  <h2 id="troubleshooting"><a class="anchor" href="#troubleshooting" title='Anchor for "Troubleshooting".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Troubleshooting</h2> 
+
+
+
+
+
+
+  <h4 id="run-metro-bundler-and-clear-its-cache"><a class="anchor" href="#run-metro-bundler-and-clear-its-cache" title='Anchor for "Run Metro Bundler and clear it&rsquo;s cache".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Run Metro Bundler and clear it&rsquo;s cache</h4> 
+
+<pre aria-label="Box containing code sample." tabindex=0><code>npm start -- --reset-cache
+</code></pre>
 
 
 
