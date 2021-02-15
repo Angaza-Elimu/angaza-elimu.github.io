@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title></title>
-    <link>http://angaza-elimu.github.io/</link>
+    <link>http://angaza-elimu.github.io/posts/</link>
     <description></description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://angaza-elimu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="http://angaza-elimu.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
       <item>
         <title></title>
         <link>http://angaza-elimu.github.io/posts/introduction/</link>
