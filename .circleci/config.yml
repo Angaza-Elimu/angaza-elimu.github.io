@@ -16,6 +16,7 @@ jobs:
       # clone repo (required to access `.circleci/deploy.sh`)
       - run: git clone https://github.com/Angaza-Elimu/angaza-elimu.github.io.git
 
+      - run: chmod +x ./angaza-elimu.github.io/.circleci/deploy.sh
       # deploy to production
       - deploy:
           name: Deploy to GitHub Pages
