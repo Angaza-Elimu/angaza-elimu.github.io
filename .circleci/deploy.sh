@@ -7,7 +7,7 @@ mkdir ~/.ssh/
 ssh-keyscan github.com >> ~/.ssh/known_hosts
 
 # stage generated HTML for GitHub Pages
-git clone --quiet --branch=gh-pages $CIRCLE_REPOSITORY_URL $DEPLOY_DIR
+git clone --quiet --branch=main $CIRCLE_REPOSITORY_URL $DEPLOY_DIR
 rsync --archive --recursive --verbose --remove-source-files $HOME/hugo/docs/* $DEPLOY_DIR
 
 # git client setup
