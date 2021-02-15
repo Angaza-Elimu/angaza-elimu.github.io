@@ -1,0 +1,30 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: cibuilds/hugo:latest
+    working_directory: ~/hugo
+    environment:
+      HUGO_BUILD_DIR: ~/hugo/docs
+    steps:
+
+       # install git
+      - run: sudo apt install git -y
+
+      - run: sudo apt install rsync
+
+      # clone repo (required to access `.circleci/deploy.sh`)
+      - run: git clone https://github.com/Angaza-Elimu/angaza-elimu.github.io.git
+
+      # deploy to production
+      - deploy:
+          name: Deploy to GitHub Pages
+          command: ./angaza-elimu.github.io/.circleci/deploy.sh
+
+      # checkout the repository
+      - checkout
+
+      # install git submodules for managing third-party dependencies
+      - run: git submodule sync && git submodule update --init
+
+      - run: hugo -v -d $HUGO_BUILD_DIR
