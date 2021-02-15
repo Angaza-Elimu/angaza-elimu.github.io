@@ -11,6 +11,16 @@ jobs:
        # install git
       - run: sudo apt install git -y
 
+      - run: apt install rsync
+
+      # clone repo (required to access `.circleci/deploy.sh`)
+      - run: git clone https://github.com/Angaza-Elimu/angaza-elimu.github.io.git
+
+      # deploy to production
+      - deploy:
+          name: Deploy to GitHub Pages
+          command: ./angaza-elimu.github.io/.circleci/deploy.sh
+
       # checkout the repository
       - checkout
 
