@@ -11,7 +11,7 @@ jobs:
        # install git
       - run: sudo apt install git -y
 
-      - run: apt install rsync
+      - run: sudo apt install rsync
 
       # clone repo (required to access `.circleci/deploy.sh`)
       - run: git clone https://github.com/Angaza-Elimu/angaza-elimu.github.io.git
