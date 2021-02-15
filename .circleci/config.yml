@@ -16,12 +16,9 @@ jobs:
       # clone repo (required to access `.circleci/deploy.sh`)
       - run: git clone https://github.com/Angaza-Elimu/angaza-elimu.github.io.git
 
-      - run: chmod +x ./angaza-elimu.github.io/.circleci/deploy.sh
-      # deploy to production
-      - deploy:
-          name: Deploy to GitHub Pages
-          command: ./angaza-elimu.github.io/.circleci/deploy.sh
+      - run: ls -l
 
+      - run: chmod +x ./angaza-elimu.github.io/.circleci/deploy.sh
       # checkout the repository
       - checkout
 
@@ -29,3 +26,7 @@ jobs:
       - run: git submodule sync && git submodule update --init
 
       - run: hugo -v -d $HUGO_BUILD_DIR
+
+      - deploy:
+          name: Deploy to GitHub Pages
+          command: ./angaza-elimu.github.io/.circleci/deploy.sh
