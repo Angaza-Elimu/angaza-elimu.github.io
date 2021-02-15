@@ -29,7 +29,7 @@
 
 
 
-<title>Getting Started</title>
+<title></title>
 
 
 
@@ -43,7 +43,7 @@
 
 
   
-    <link rel="canonical" href="http://localhost:1313/posts/introduction/">
+    <link rel="canonical" href="http://angaza-elimu.github.io/posts/introduction/">
   
 
 
@@ -53,30 +53,19 @@
 
 
 
-<meta property="og:site_name" content="React-Offline-Sync">
-<meta property="og:title" content="Getting Started">
+<meta property="og:site_name" content="">
+<meta property="og:title" content="">
 
-  <meta property="og:url" content="http://localhost:1313/posts/introduction/">
-
-
+  <meta property="og:url" content="http://angaza-elimu.github.io/posts/introduction/">
 
 
 
 
 
 
-  <meta property="og:type" content="article">
-  
-  
-    <meta property="article:published_time" content="2020-12-18">
-    <meta property="article:modified_time" content="2020-12-18">
-    <meta property="og:updated_time" content="2020-12-18">
-  
 
-  
-  
-  
-  
+
+  <meta property="og:type" content="website">
 
 
 
@@ -118,29 +107,12 @@
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Article",
-      "mainEntityOfPage": {
-        "@type": "WebSite",
-        "@id": "http:\/\/localhost:1313\/"
-      },
-      "headline": "Getting Started",
-      "description": "",
-      
-      "url": "http:\/\/localhost:1313\/posts\/introduction\/",
+      "@type": "WebSite",
+      "url": "http:\/\/angaza-elimu.github.io\/",
       "inLanguage": "en",
-      "datePublished": "2020-12-18",
-      "dateModified": "2020-12-18",
-      "wordCount" : "225",
-      "publisher": {
-        "@type": "Person",
-        "name": ""
-      },
-      "author": {
-        "@type": "Person",
-        "name": "",
-        
-        
-      }
+      "name": "",
+      "description": "",
+      "publisher": ""
     }
   </script>
 
@@ -149,7 +121,7 @@
 
 
 
-<link rel="stylesheet" href="/css/main.min.cc27258d7b1824cc8905c0cf19432d813ce041dea05759aef706607c2b4b7c9457ce24602aba5bb887dbda022cf53e0907cbb53db69638886b85c72027196e9c.css" integrity="sha512-zCcljXsYJMyJBcDPGUMtgTzgQd6gV1mu9wZgfCtLfJRXziRgKrpbuIfb2gIs9T4JB8u1PbaWOIhrhccgJxlunA==">
+<link rel="stylesheet" href="/css/main.min.d84e2ce7505598125c5ab36f34da937b4b82c47c75febcae168a1c199fcc589645e02149eebd96c683cc347c9d1170bfc9d33a54674c538946adebd5777e9ffd.css" integrity="sha512-2E4s51BVmBJcWrNvNNqTe0uCxHx1/ryuFoocGZ/MWJZF4CFJ7r2WxoPMNHydEXC/ydM6VGdMU4lGrevVd36f/Q==">
 
 
 
@@ -220,13 +192,13 @@
 
   <script>
     
-      'use strict';const PREFERS_LIGHT=window.matchMedia('(prefers-color-scheme: light)');const PREFERS_DARK=window.matchMedia('(prefers-color-scheme: dark)');const ROOT=document.documentElement;const SHEET=document.documentElement.style;const META_THEME_COLOR=document.querySelector('meta[name=theme-color]');function setDark(){ROOT.dataset.mode='dark'};function setLight(){ROOT.dataset.mode='light'};if(localStorage.getItem('isDark')=='true'){setDark()}else if(localStorage.getItem('isDark')=='false'){setLight()}else if(PREFERS_DARK.matches){setDark()}else if(PREFERS_LIGHT.matches){setLight()};console.log('Light/dark mode loaded.');function getAccent(){if(ROOT.dataset.mode==='dark'){if(localStorage.getItem('darkAccent')===null){console.log("The user never used the palette while in the 'dark' mode.");console.log("As the mode is 'dark', loading the 'default accent color' for the dark mode.");var currentAccent="#dd587c"}else{var currentAccent=localStorage.getItem('darkAccent')
-console.log("The user previously used the palette while in the 'dark' mode.");console.log("As the mode is 'dark', loading the 'dark accent color' chosen by the user.");}}else if(ROOT.dataset.mode==='light'){if(localStorage.getItem('lightAccent')===null){console.log("The user never used the palette while in the 'light' mode.");console.log("As the mode is 'light', loading the 'default accent color' for the light mode.");var currentAccent="#225670"}else{var currentAccent=localStorage.getItem('lightAccent')
-console.log("The user previously used the palette while in the 'light' mode.");console.log("As the mode is 'light', loading the 'light accent color' chosen by the user.");}};return currentAccent};var activeAccent=getAccent();SHEET.setProperty('--accent',activeAccent);META_THEME_COLOR.setAttribute('content',activeAccent);function updateAccent(){var activeAccent=getAccent();SHEET.setProperty('--accent',activeAccent);PALETTE.value=activeAccent;META_THEME_COLOR.setAttribute('content',activeAccent);};document.addEventListener('DOMContentLoaded',function(){PALETTE.value=activeAccent;function smoothTransition(){document.body.style.transition=document.querySelector('header').style.transition=document.querySelector('footer').style.transition='background-color .3s ease, color .3s ease'};function userModeChange(){smoothTransition();if(ROOT.dataset.mode=='light'){setDark();localStorage.setItem('isDark','true')
-console.log("Mode changed to 'dark' by the user.");}else{setLight();localStorage.setItem('isDark','false')
-console.log("Mode changed to 'light' by the user.");};updateAccent()};document.addEventListener('keydown',(event)=>{const E=event||window.event;if(E.keyCode===77&&E.ctrlKey&&E.altKey){userModeChange();return;}},false);function OSModeChange(){smoothTransition();if(PREFERS_LIGHT.matches){setLight();localStorage.setItem('isDark','false')
-console.log("Mode changed to 'light' in OS level.");}else if(PREFERS_DARK.matches){setDark();localStorage.setItem('isDark','true')
-console.log("Mode changed to 'dark' in OS level.");};updateAccent()};PREFERS_LIGHT.addListener(OSModeChange);PREFERS_DARK.addListener(OSModeChange);document.querySelector('footer button').addEventListener('click',userModeChange)})
+      'use strict';const PREFERS_LIGHT=window.matchMedia('(prefers-color-scheme: light)');const PREFERS_DARK=window.matchMedia('(prefers-color-scheme: dark)');const ROOT=document.documentElement;const SHEET=document.documentElement.style;const META_THEME_COLOR=document.querySelector('meta[name=theme-color]');function setDark(){ROOT.dataset.mode='dark'};function setLight(){ROOT.dataset.mode='light'};if(localStorage.getItem('isDark')=='true'){setDark()}else if(localStorage.getItem('isDark')=='false'){setLight()}else if(PREFERS_DARK.matches){setDark()}else if(PREFERS_LIGHT.matches){setLight()};function getAccent(){if(ROOT.dataset.mode==='dark'){if(localStorage.getItem('darkAccent')===null){var currentAccent="#dd587c"}else{var currentAccent=localStorage.getItem('darkAccent')
+}}else if(ROOT.dataset.mode==='light'){if(localStorage.getItem('lightAccent')===null){var currentAccent="#225670"}else{var currentAccent=localStorage.getItem('lightAccent')
+}};return currentAccent};var activeAccent=getAccent();SHEET.setProperty('--accent',activeAccent);META_THEME_COLOR.setAttribute('content',activeAccent);function updateAccent(){var activeAccent=getAccent();SHEET.setProperty('--accent',activeAccent);PALETTE.value=activeAccent;META_THEME_COLOR.setAttribute('content',activeAccent);};document.addEventListener('DOMContentLoaded',function(){PALETTE.value=activeAccent;function smoothTransition(){document.body.style.transition=document.querySelector('header').style.transition=document.querySelector('footer').style.transition='background-color .3s ease, color .3s ease'};function userModeChange(){smoothTransition();if(ROOT.dataset.mode=='light'){setDark();localStorage.setItem('isDark','true')
+}else{setLight();localStorage.setItem('isDark','false')
+};updateAccent()};function OSModeChange(){smoothTransition();if(PREFERS_LIGHT.matches){setLight();localStorage.setItem('isDark','false')
+}else if(PREFERS_DARK.matches){setDark();localStorage.setItem('isDark','true')
+};updateAccent()};PREFERS_LIGHT.addListener(OSModeChange);PREFERS_DARK.addListener(OSModeChange);document.querySelector('footer button').addEventListener('click',userModeChange)})
     
   </script>
 
@@ -239,7 +211,7 @@ console.log("Mode changed to 'dark' in OS level.");};updateAccent()};PREFERS_LIG
     <header>
       
 
-  <a href="/">React-Offline-Sync</a>
+  <a href="/"></a>
 
 
 
@@ -254,14 +226,8 @@ console.log("Mode changed to 'dark' in OS level.");};updateAccent()};PREFERS_LIG
     <article>
       <header>
         
-        <h1>Getting Started</h1>
+        <h1></h1>
 
-        
-          <p>
-            
-              Published on <time datetime="2020-12-18">2020-12-18</time>
-            
-          </p>
         
         
         
@@ -312,139 +278,6 @@ console.log("Mode changed to 'dark' in OS level.");};updateAccent()};PREFERS_LIG
 
 
 
-
-
-
-
-
-  <h1 id="react-native-offline-first-and-sync">React Native Offline First and sync</h1> 
-
-<p>This project is a library that implements an offline first approach with SQLite and React Native (featuring TypeScript and CocoaPods under the hood). Once authorized, the database can be synced between multiple devices.</p>
-<p>These instructions only cover iOS usage at this time.</p>
-
-
-
-
-
-  <h2 id="install-js-dependencies"><a class="anchor" href="#install-js-dependencies" title='Anchor for "Install JS dependencies".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Install JS dependencies</h2> 
-
-<pre aria-label="Box containing code sample." tabindex=0><code>npm install
-</code></pre>
-
-
-
-
-
-  <h2 id="install-ios-dependencies-requires-cocoapodshttpscocoapodsorg"><a class="anchor" href="#install-ios-dependencies-requires-cocoapodshttpscocoapodsorg" title='Anchor for "Install iOS dependencies (requires Cocoapods)".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Install iOS dependencies (requires <a href="https://cocoapods.org/">Cocoapods</a>)</h2> 
-
-<pre aria-label="Box containing code sample." tabindex=0><code>pushd ios/
-pod install
-popd
-</code></pre>
-
-
-
-
-
-  <h2 id="start-the-react-native-metro-bundler"><a class="anchor" href="#start-the-react-native-metro-bundler" title='Anchor for "Start the React Native Metro Bundler".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Start the React Native Metro Bundler</h2> 
-
-<pre aria-label="Box containing code sample." tabindex=0><code>npm start
-</code></pre>
-
-
-
-
-
-  <h2 id="compile-typescript-source-in-watch-mode"><a class="anchor" href="#compile-typescript-source-in-watch-mode" title='Anchor for "Compile TypeScript source in watch mode".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Compile TypeScript source in watch mode</h2> 
-
-<pre aria-label="Box containing code sample." tabindex=0><code>npm run tsc -- -w
-</code></pre>
-
-
-
-
-
-  <h2 id="run-the-jest-tests-in-watch-mode"><a class="anchor" href="#run-the-jest-tests-in-watch-mode" title='Anchor for "Run the Jest tests in watch mode".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Run the Jest tests in watch mode</h2> 
-
-<pre aria-label="Box containing code sample." tabindex=0><code>npm test
-</code></pre>
-
-
-
-
-
-  <h2 id="open-the-source-in-vs-code"><a class="anchor" href="#open-the-source-in-vs-code" title='Anchor for "Open the source in VS Code".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Open the source in VS Code</h2> 
-
-<pre aria-label="Box containing code sample." tabindex=0><code>code .
-</code></pre>
-
-
-
-
-
-  <h2 id="run-and-debug-on-an-ios-simulator"><a class="anchor" href="#run-and-debug-on-an-ios-simulator" title='Anchor for "Run (and debug) on an iOS simulator".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Run (and debug) on an iOS simulator</h2> 
-
-<p>With the &ldquo;React Native Tools&rdquo; VSCode extension installed, open the Debug tab and press the &ldquo;Play&rdquo; button with &ldquo;Debug iOS&rdquo; selected in the dropdown.</p>
-<p>When the simulator opens, press Command-D to open the developer menu. Tap &ldquo;Debug JS Remotely&rdquo; to connect VSCode to the app and enable debugging.</p>
-<p>Alternatively:</p>
-<pre aria-label="Box containing code sample." tabindex=0><code>open ios/RNSQLiteDemo.xcworkspace
-</code></pre>
-<p>Select a simulator of your choice. Press the &ldquo;run&rdquo; button.</p>
-
-
-
-
-
-  <h2 id="e2e-testing-with-detox"><a class="anchor" href="#e2e-testing-with-detox" title='Anchor for "E2E Testing with Detox".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> E2E Testing with Detox</h2> 
-
-<p>End-to-end testing happens from within the <code>e2e/</code> directory:</p>
-<pre aria-label="Box containing code sample." tabindex=0><code>cd e2e/
-npm install
-</code></pre>
-
-
-
-
-
-  <h4 id="build-e2e-tests"><a class="anchor" href="#build-e2e-tests" title='Anchor for "Build E2E tests".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Build E2E tests</h4> 
-
-<pre aria-label="Box containing code sample." tabindex=0><code>npm run test:e2e:build
-</code></pre>
-
-
-
-
-
-  <h4 id="run-e2e-tests"><a class="anchor" href="#run-e2e-tests" title='Anchor for "Run E2E tests".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Run E2E tests</h4> 
-
-<pre aria-label="Box containing code sample." tabindex=0><code>npm run test:e2e
-</code></pre>
-
-
-
-
-
-  <h4 id="run-tests-without-reinstalling-onto-the-simulator"><a class="anchor" href="#run-tests-without-reinstalling-onto-the-simulator" title='Anchor for "Run tests without reinstalling onto the Simulator".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Run tests without reinstalling onto the Simulator</h4> 
-
-<p>Details on this workflow can be <a href="https://github.com/wix/Detox/blob/master/docs/Guide.DevelopingWhileWritingTests.md">found here</a>:</p>
-<pre aria-label="Box containing code sample." tabindex=0><code>npm run test:e2e:reuse
-</code></pre>
-
-
-
-
-
-  <h2 id="troubleshooting"><a class="anchor" href="#troubleshooting" title='Anchor for "Troubleshooting".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Troubleshooting</h2> 
-
-
-
-
-
-
-  <h4 id="run-metro-bundler-and-clear-its-cache"><a class="anchor" href="#run-metro-bundler-and-clear-its-cache" title='Anchor for "Run Metro Bundler and clear it&rsquo;s cache".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Run Metro Bundler and clear it&rsquo;s cache</h4> 
-
-<pre aria-label="Box containing code sample." tabindex=0><code>npm start -- --reset-cache
-</code></pre>
 
 
 
@@ -516,5 +349,5 @@ npm install
     
     
 
-  <script src="/livereload.js?port=1313&amp;mindelay=10&amp;v=2" data-no-instant defer></script></body>
+  </body>
 </html>

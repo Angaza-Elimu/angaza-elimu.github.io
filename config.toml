@@ -1,5 +1,5 @@
 baseURL = "http://angaza-elimu.github.io/"
 languageCode = "en-us"
-title = "React-Offline-Sync"
+
 theme = "color-your-world"
 publishDir = "docs"

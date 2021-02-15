@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>React-Offline-Sync</title>
-    <link>http://localhost:1313/posts/</link>
+    <title></title>
+    <link>http://angaza-elimu.github.io/posts/</link>
     <description></description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 18 Dec 2020 12:52:59 +0300</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="http://angaza-elimu.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
       <item>
-        <title>Getting Started</title>
-        <link>http://localhost:1313/posts/introduction/</link>
-        <pubDate>Fri, 18 Dec 2020 12:52:59 +0300</pubDate>
+        <title></title>
+        <link>http://angaza-elimu.github.io/posts/introduction/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/posts/introduction/</guid>
-        <description>React Native Offline First and sync This project is a library that implements an offline first approach with SQLite and React Native (featuring TypeScript and CocoaPods under the hood). Once authorized, the database can be synced between multiple devices.
-These instructions only cover iOS usage at this time.
- Install JS dependencies npm install   Install iOS dependencies (requires Cocoapods) pushd ios/ pod install popd   Start the React Native Metro Bundler npm start   Compile TypeScript source in watch mode npm run tsc -- -w   Run the Jest tests in watch mode npm test   Open the source in VS Code code .</description>
+        <guid>http://angaza-elimu.github.io/posts/introduction/</guid>
+        <description></description>
       </item>
     
   </channel>

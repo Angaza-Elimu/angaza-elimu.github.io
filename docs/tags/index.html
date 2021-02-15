@@ -57,10 +57,10 @@
 
 
 
-<meta property="og:site_name" content="React-Offline-Sync">
+<meta property="og:site_name" content="">
 <meta property="og:title" content="Tags">
 <meta property="og:description" content="Page containing tags.">
-  <meta property="og:url" content="http://localhost:1313/tags/">
+  <meta property="og:url" content="http://angaza-elimu.github.io/tags/">
 
 
 
@@ -81,7 +81,7 @@
 
 
 
-  <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/index.xml" title="React-Offline-Sync">
+  <link rel="alternate" type="application/rss+xml" href="http://angaza-elimu.github.io/tags/index.xml" title="">
 
 
 
@@ -114,9 +114,9 @@
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "url": "http:\/\/localhost:1313\/",
+      "url": "http:\/\/angaza-elimu.github.io\/",
       "inLanguage": "en",
-      "name": "React-Offline-Sync",
+      "name": "",
       "description": "",
       "publisher": ""
     }
@@ -127,7 +127,7 @@
 
 
 
-<link rel="stylesheet" href="/css/main.min.cc27258d7b1824cc8905c0cf19432d813ce041dea05759aef706607c2b4b7c9457ce24602aba5bb887dbda022cf53e0907cbb53db69638886b85c72027196e9c.css" integrity="sha512-zCcljXsYJMyJBcDPGUMtgTzgQd6gV1mu9wZgfCtLfJRXziRgKrpbuIfb2gIs9T4JB8u1PbaWOIhrhccgJxlunA==">
+<link rel="stylesheet" href="/css/main.min.d84e2ce7505598125c5ab36f34da937b4b82c47c75febcae168a1c199fcc589645e02149eebd96c683cc347c9d1170bfc9d33a54674c538946adebd5777e9ffd.css" integrity="sha512-2E4s51BVmBJcWrNvNNqTe0uCxHx1/ryuFoocGZ/MWJZF4CFJ7r2WxoPMNHydEXC/ydM6VGdMU4lGrevVd36f/Q==">
 
 
 
@@ -198,13 +198,13 @@
 
   <script>
     
-      'use strict';const PREFERS_LIGHT=window.matchMedia('(prefers-color-scheme: light)');const PREFERS_DARK=window.matchMedia('(prefers-color-scheme: dark)');const ROOT=document.documentElement;const SHEET=document.documentElement.style;const META_THEME_COLOR=document.querySelector('meta[name=theme-color]');function setDark(){ROOT.dataset.mode='dark'};function setLight(){ROOT.dataset.mode='light'};if(localStorage.getItem('isDark')=='true'){setDark()}else if(localStorage.getItem('isDark')=='false'){setLight()}else if(PREFERS_DARK.matches){setDark()}else if(PREFERS_LIGHT.matches){setLight()};console.log('Light/dark mode loaded.');function getAccent(){if(ROOT.dataset.mode==='dark'){if(localStorage.getItem('darkAccent')===null){console.log("The user never used the palette while in the 'dark' mode.");console.log("As the mode is 'dark', loading the 'default accent color' for the dark mode.");var currentAccent="#dd587c"}else{var currentAccent=localStorage.getItem('darkAccent')
-console.log("The user previously used the palette while in the 'dark' mode.");console.log("As the mode is 'dark', loading the 'dark accent color' chosen by the user.");}}else if(ROOT.dataset.mode==='light'){if(localStorage.getItem('lightAccent')===null){console.log("The user never used the palette while in the 'light' mode.");console.log("As the mode is 'light', loading the 'default accent color' for the light mode.");var currentAccent="#225670"}else{var currentAccent=localStorage.getItem('lightAccent')
-console.log("The user previously used the palette while in the 'light' mode.");console.log("As the mode is 'light', loading the 'light accent color' chosen by the user.");}};return currentAccent};var activeAccent=getAccent();SHEET.setProperty('--accent',activeAccent);META_THEME_COLOR.setAttribute('content',activeAccent);function updateAccent(){var activeAccent=getAccent();SHEET.setProperty('--accent',activeAccent);PALETTE.value=activeAccent;META_THEME_COLOR.setAttribute('content',activeAccent);};document.addEventListener('DOMContentLoaded',function(){PALETTE.value=activeAccent;function smoothTransition(){document.body.style.transition=document.querySelector('header').style.transition=document.querySelector('footer').style.transition='background-color .3s ease, color .3s ease'};function userModeChange(){smoothTransition();if(ROOT.dataset.mode=='light'){setDark();localStorage.setItem('isDark','true')
-console.log("Mode changed to 'dark' by the user.");}else{setLight();localStorage.setItem('isDark','false')
-console.log("Mode changed to 'light' by the user.");};updateAccent()};document.addEventListener('keydown',(event)=>{const E=event||window.event;if(E.keyCode===77&&E.ctrlKey&&E.altKey){userModeChange();return;}},false);function OSModeChange(){smoothTransition();if(PREFERS_LIGHT.matches){setLight();localStorage.setItem('isDark','false')
-console.log("Mode changed to 'light' in OS level.");}else if(PREFERS_DARK.matches){setDark();localStorage.setItem('isDark','true')
-console.log("Mode changed to 'dark' in OS level.");};updateAccent()};PREFERS_LIGHT.addListener(OSModeChange);PREFERS_DARK.addListener(OSModeChange);document.querySelector('footer button').addEventListener('click',userModeChange)})
+      'use strict';const PREFERS_LIGHT=window.matchMedia('(prefers-color-scheme: light)');const PREFERS_DARK=window.matchMedia('(prefers-color-scheme: dark)');const ROOT=document.documentElement;const SHEET=document.documentElement.style;const META_THEME_COLOR=document.querySelector('meta[name=theme-color]');function setDark(){ROOT.dataset.mode='dark'};function setLight(){ROOT.dataset.mode='light'};if(localStorage.getItem('isDark')=='true'){setDark()}else if(localStorage.getItem('isDark')=='false'){setLight()}else if(PREFERS_DARK.matches){setDark()}else if(PREFERS_LIGHT.matches){setLight()};function getAccent(){if(ROOT.dataset.mode==='dark'){if(localStorage.getItem('darkAccent')===null){var currentAccent="#dd587c"}else{var currentAccent=localStorage.getItem('darkAccent')
+}}else if(ROOT.dataset.mode==='light'){if(localStorage.getItem('lightAccent')===null){var currentAccent="#225670"}else{var currentAccent=localStorage.getItem('lightAccent')
+}};return currentAccent};var activeAccent=getAccent();SHEET.setProperty('--accent',activeAccent);META_THEME_COLOR.setAttribute('content',activeAccent);function updateAccent(){var activeAccent=getAccent();SHEET.setProperty('--accent',activeAccent);PALETTE.value=activeAccent;META_THEME_COLOR.setAttribute('content',activeAccent);};document.addEventListener('DOMContentLoaded',function(){PALETTE.value=activeAccent;function smoothTransition(){document.body.style.transition=document.querySelector('header').style.transition=document.querySelector('footer').style.transition='background-color .3s ease, color .3s ease'};function userModeChange(){smoothTransition();if(ROOT.dataset.mode=='light'){setDark();localStorage.setItem('isDark','true')
+}else{setLight();localStorage.setItem('isDark','false')
+};updateAccent()};function OSModeChange(){smoothTransition();if(PREFERS_LIGHT.matches){setLight();localStorage.setItem('isDark','false')
+}else if(PREFERS_DARK.matches){setDark();localStorage.setItem('isDark','true')
+};updateAccent()};PREFERS_LIGHT.addListener(OSModeChange);PREFERS_DARK.addListener(OSModeChange);document.querySelector('footer button').addEventListener('click',userModeChange)})
     
   </script>
 
@@ -217,7 +217,7 @@ console.log("Mode changed to 'dark' in OS level.");};updateAccent()};PREFERS_LIG
     <header>
       
 
-  <a href="/">React-Offline-Sync</a>
+  <a href="/"></a>
 
 
 
@@ -317,5 +317,5 @@ console.log("Mode changed to 'dark' in OS level.");};updateAccent()};PREFERS_LIG
     
     
 
-  <script src="/livereload.js?port=1313&amp;mindelay=10&amp;v=2" data-no-instant defer></script></body>
+  </body>
 </html>
