@@ -1,6 +1,6 @@
 # Documentation Site
 
-[![Build Status](https://github.com/Angaza-Elimu/angaza-elimu.github.io/actions/workflows/gh-pages.yml/badge.svg)
+![Build Status](https://github.com/Angaza-Elimu/angaza-elimu.github.io/actions/workflows/gh-pages.yml/badge.svg)
 
 
 This is the Official Angaza Elimu documentation site built in [Hugo](https://gohugo.io/) an open-source static site generator. Currently it hosts documentation
