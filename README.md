@@ -14,7 +14,7 @@ for the following projects.
 ## Installation
 
 ```sh
-git clone https://github.com/Angaza-Elimu/angaza-elimu.github.io
+git clone --recurse-submodules https://github.com/Angaza-Elimu/angaza-elimu.github.io
 ```
 
 ## Local Development
