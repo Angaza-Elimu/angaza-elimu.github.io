@@ -34,5 +34,7 @@ hugo
 
 This command generates static content into the `docs` directory and can be served using any static contents hosting service.
 
+### Theme
 
+The Hugo theme [Color Your World](https://themes.gohugo.io/hugo-theme-color-your-world/) is used in the documentation.
 
