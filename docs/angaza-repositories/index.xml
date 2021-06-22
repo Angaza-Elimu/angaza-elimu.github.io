@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>https://localhost:1313/angaza-repositories/</link>
+    <description>My description</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://localhost:1313/angaza-repositories/index.xml" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Adaptive Learning Model</title>
+        <link>https://localhost:1313/angaza-repositories/model/model/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://localhost:1313/angaza-repositories/model/model/</guid>
+        <description></description>
+      </item>
+    
+  </channel>
+</rss>

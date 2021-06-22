@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en" data-mode="light">
+  <head prefix="og: http://ogp.me/ns#">
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="Hugo 0.79.1">
+<meta name="theme" content="Color Your World -- gitlab.com/rmaguiar/hugo-theme-color-your-world">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<title>Contribution Guidelines</title>
+
+
+
+
+
+
+<meta name="robots" content="index follow">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+
+
+
+  
+    <link rel="canonical" href="https://localhost:1313/angaza-repositories/mobile/contribution-guidelines/contribution-guidelines/">
+  
+
+
+
+
+
+
+
+
+<meta property="og:site_name" content="">
+<meta property="og:title" content="Contribution Guidelines">
+
+  <meta property="og:url" content="https://localhost:1313/angaza-repositories/mobile/contribution-guidelines/contribution-guidelines/">
+
+
+
+
+
+
+
+
+  <meta property="og:type" content="website">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="theme-color" content="#222">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https:\/\/localhost:1313",
+      "inLanguage": "en",
+      "name": "",
+      "description": "My description",
+      "publisher": ""
+    }
+  </script>
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.min.d84e2ce7505598125c5ab36f34da937b4b82c47c75febcae168a1c199fcc589645e02149eebd96c683cc347c9d1170bfc9d33a54674c538946adebd5777e9ffd.css" integrity="sha512-2E4s51BVmBJcWrNvNNqTe0uCxHx1/ryuFoocGZ/MWJZF4CFJ7r2WxoPMNHydEXC/ydM6VGdMU4lGrevVd36f/Q==">
+
+
+
+<noscript>
+
+  
+  
+
+  
+    <meta name="theme-color" content="#dd587c" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#225670" media="(prefers-color-scheme: light)">
+  
+
+  <style>
+  
+    html {
+      --accent: #225670;
+    }
+  
+    .req-js,
+    img.lazyload {
+      display: none;
+    }
+    
+  </style>
+  
+</noscript>
+
+
+
+
+
+
+  <link rel="preload" href="/fonts/open-sans-v17-latin-700.woff" as="font" crossorigin="anonymous">
+
+  <link rel="preload" href="/fonts/open-sans-v17-latin-700.woff2" as="font" crossorigin="anonymous">
+
+  <link rel="preload" href="/fonts/open-sans-v17-latin-italic.woff" as="font" crossorigin="anonymous">
+
+  <link rel="preload" href="/fonts/open-sans-v17-latin-italic.woff2" as="font" crossorigin="anonymous">
+
+  <link rel="preload" href="/fonts/open-sans-v17-latin-regular.woff" as="font" crossorigin="anonymous">
+
+  <link rel="preload" href="/fonts/open-sans-v17-latin-regular.woff2" as="font" crossorigin="anonymous">
+
+  <link rel="preload" href="/fonts/oswald-v29-latin-700.woff" as="font" crossorigin="anonymous">
+
+  <link rel="preload" href="/fonts/oswald-v29-latin-700.woff2" as="font" crossorigin="anonymous">
+
+
+
+
+
+<script defer src="/js/lazysizes.min.min.a85a0eccaf9ef0d2f083a9dc4d0e05dc90acc5be0e84b43e20fde692871e1861ae0191f7c3ca2c00f2664efabf6aff2625a478b8f22ea43cb056cb6ec9a8d948.js" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    
+      'use strict';const PREFERS_LIGHT=window.matchMedia('(prefers-color-scheme: light)');const PREFERS_DARK=window.matchMedia('(prefers-color-scheme: dark)');const ROOT=document.documentElement;const SHEET=document.documentElement.style;const META_THEME_COLOR=document.querySelector('meta[name=theme-color]');function setDark(){ROOT.dataset.mode='dark'};function setLight(){ROOT.dataset.mode='light'};if(localStorage.getItem('isDark')=='true'){setDark()}else if(localStorage.getItem('isDark')=='false'){setLight()}else if(PREFERS_DARK.matches){setDark()}else if(PREFERS_LIGHT.matches){setLight()};function getAccent(){if(ROOT.dataset.mode==='dark'){if(localStorage.getItem('darkAccent')===null){var currentAccent="#dd587c"}else{var currentAccent=localStorage.getItem('darkAccent')
+}}else if(ROOT.dataset.mode==='light'){if(localStorage.getItem('lightAccent')===null){var currentAccent="#225670"}else{var currentAccent=localStorage.getItem('lightAccent')
+}};return currentAccent};var activeAccent=getAccent();SHEET.setProperty('--accent',activeAccent);META_THEME_COLOR.setAttribute('content',activeAccent);function updateAccent(){var activeAccent=getAccent();SHEET.setProperty('--accent',activeAccent);PALETTE.value=activeAccent;META_THEME_COLOR.setAttribute('content',activeAccent);};document.addEventListener('DOMContentLoaded',function(){PALETTE.value=activeAccent;function smoothTransition(){document.body.style.transition=document.querySelector('header').style.transition=document.querySelector('footer').style.transition='background-color .3s ease, color .3s ease'};function userModeChange(){smoothTransition();if(ROOT.dataset.mode=='light'){setDark();localStorage.setItem('isDark','true')
+}else{setLight();localStorage.setItem('isDark','false')
+};updateAccent()};function OSModeChange(){smoothTransition();if(PREFERS_LIGHT.matches){setLight();localStorage.setItem('isDark','false')
+}else if(PREFERS_DARK.matches){setDark();localStorage.setItem('isDark','true')
+};updateAccent()};PREFERS_LIGHT.addListener(OSModeChange);PREFERS_DARK.addListener(OSModeChange);document.querySelector('footer button').addEventListener('click',userModeChange)})
+    
+  </script>
+
+
+
+  </head>
+
+  <body>
+
+    <header>
+      
+
+  <a href="/"></a>
+
+
+
+
+
+    </header>
+
+    <div class="filler">
+      
+
+  <main>
+    <article>
+      <header>
+        
+        <h1>Contribution Guidelines</h1>
+
+        
+        
+        
+        
+      </header>
+    
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h1 id="contributing-to-this-repository----omit-in-toc---">Contributing to this repository <!-- raw HTML omitted --></h1> 
+
+
+
+
+
+
+  <h2 id="getting-started----omit-in-toc---"><a class="anchor" href="#getting-started----omit-in-toc---" title='Anchor for "Getting started ".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Getting started <!-- raw HTML omitted --></h2> 
+
+<p>Before you begin:</p>
+<ul>
+<li>This site is powered by Node.js. Check to see if you&rsquo;re on the <a href="contributing/development.md">version of node we support</a>.</li>
+<li>Have you read the <a href="CODE_OF_CONDUCT.md">code of conduct</a>?</li>
+<li>Check out the <a href="https://github.com/github/docs/issues">existing issues</a> &amp; see if we <a href="#types-of-contributions-memo">accept contributions</a> for your type of issue.</li>
+</ul>
+
+
+
+
+
+  <h3 id="use-the-make-a-contribution-button"><a class="anchor" href="#use-the-make-a-contribution-button" title='Anchor for "Use the &lsquo;make a contribution&rsquo; button".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Use the &lsquo;make a contribution&rsquo; button</h3> 
+
+<p>Navigating a new codebase can be challenging, so we&rsquo;re making that a little easier. As you&rsquo;re using docs.github.com, you may come across an article that you want to make an update to. You can click on the <strong>make a contribution</strong> button right on that article, which will take you to the file in this repo where you&rsquo;ll make your changes.</p>
+<p>Before you make your changes, check to see if an <a href="https://github.com/github/docs/issues/">issue exists</a> already for the change you want to make.</p>
+
+
+
+
+
+  <h3 id="dont-see-your-issue-open-one"><a class="anchor" href="#dont-see-your-issue-open-one" title='Anchor for "Don&rsquo;t see your issue? Open one".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Don&rsquo;t see your issue? Open one</h3> 
+
+<p>If you spot something new, open an issue using a <a href="https://github.com/github/docs/issues/new/choose">template</a>. We&rsquo;ll use the issue to have a conversation about the problem you want to fix.</p>
+
+
+
+
+
+  <h3 id="ready-to-make-a-change-fork-the-repo"><a class="anchor" href="#ready-to-make-a-change-fork-the-repo" title='Anchor for "Ready to make a change? Fork the repo".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Ready to make a change? Fork the repo</h3> 
+
+<p>Fork using GitHub Desktop:</p>
+<ul>
+<li><a href="https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/getting-started-with-github-desktop">Getting started with GitHub Desktop</a> will guide you through setting up Desktop.</li>
+<li>Once Desktop is set up, you can use it to <a href="https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/cloning-and-forking-repositories-from-github-desktop">fork the repo</a>!</li>
+</ul>
+<p>Fork using the command line:</p>
+<ul>
+<li><a href="https://docs.github.com/en/github/getting-started-with-github/fork-a-repo#fork-an-example-repository">Fork the repo</a> so that you can make your changes without affecting the original project until you&rsquo;re ready to merge them.</li>
+</ul>
+<p>Fork with <a href="https://github.com/features/codespaces">GitHub Codespaces</a>:</p>
+<ul>
+<li><a href="https://docs.github.com/en/free-pro-team@latest/github/developing-online-with-codespaces/creating-a-codespace">Fork, edit, and preview</a> using <a href="https://github.com/features/codespaces">GitHub Codespaces</a> without having to install and run the project locally.</li>
+</ul>
+
+
+
+
+
+  <h3 id="make-your-update"><a class="anchor" href="#make-your-update" title='Anchor for "Make your update:".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Make your update:</h3> 
+
+<p>Make your changes to the file(s) you&rsquo;d like to update. Here are some tips and tricks for <a href="#working-in-the-githubdocs-repository">using the docs codebase</a>.</p>
+<ul>
+<li>Are you making changes to the application code? You&rsquo;ll need <strong>Node.js v14</strong> to run the site locally. See <a href="contributing/development.md">contributing/development.md</a>.</li>
+<li>Are you contributing to markdown? We use <a href="contributing/content-markup-reference.md">GitHub Markdown</a>.</li>
+</ul>
+
+
+
+
+
+  <h3 id="open-a-pull-request"><a class="anchor" href="#open-a-pull-request" title='Anchor for "Open a pull request".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Open a pull request</h3> 
+
+<p>When you&rsquo;re done making changes and you&rsquo;d like to propose them for review, use the <a href="#pull-request-template">pull request template</a> to open your PR (pull request).</p>
+
+
+
+
+
+  <h3 id="submit-your-pr--get-it-reviewed"><a class="anchor" href="#submit-your-pr--get-it-reviewed" title='Anchor for "Submit your PR &amp; get it reviewed".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Submit your PR &amp; get it reviewed</h3> 
+
+<ul>
+<li>Once you submit your PR, others from the Docs community will review it with you. The first thing you&rsquo;re going to want to do is a <a href="#self-review">self review</a>.</li>
+<li>After that, we may have questions, check back on your PR to keep up with the conversation.</li>
+<li>Did you have an issue, like a merge conflict? Check out our <a href="https://lab.github.com/githubtraining/managing-merge-conflicts">git tutorial</a> on how to resolve merge conflicts and other issues.</li>
+</ul>
+
+
+
+
+
+  <h3 id="your-pr-is-merged"><a class="anchor" href="#your-pr-is-merged" title='Anchor for "Your PR is merged!".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Your PR is merged!</h3> 
+
+<p>Congratulations! The whole GitHub community thanks you. :sparkles:</p>
+<p>Once your PR is merged, you will be proudly listed as a contributor in the <a href="https://github.com/github/docs/graphs/contributors">contributor chart</a>.</p>
+
+
+
+
+
+  <h3 id="keep-contributing-as-you-use-github-docs"><a class="anchor" href="#keep-contributing-as-you-use-github-docs" title='Anchor for "Keep contributing as you use GitHub Docs".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Keep contributing as you use GitHub Docs</h3> 
+
+<p>Now that you&rsquo;re a part of the GitHub Docs community, you can keep participating in many ways.</p>
+<p><strong>Learn more about contributing:</strong></p>
+<ul>
+<li><a href="#types-of-contributions-memo">Types of contributions :memo:</a>
+<ul>
+<li><a href="#mega-discussions">:mega: Discussions</a></li>
+<li><a href="#beetle-issues">:beetle: Issues</a></li>
+<li><a href="#hammer_and_wrench-pull-requests">:hammer_and_wrench: Pull requests</a></li>
+<li><a href="#question-support">:question: Support</a></li>
+<li><a href="#earth_asia-translations">:earth_asia: Translations</a></li>
+<li><a href="#balance_scale-site-policy">:balance_scale: Site Policy</a></li>
+</ul>
+</li>
+<li><a href="#starting-with-an-issue">Starting with an issue</a>
+<ul>
+<li><a href="#labels">Labels</a></li>
+</ul>
+</li>
+<li><a href="#opening-a-pull-request">Opening a pull request</a></li>
+<li><a href="#working-in-the-githubdocs-repository">Working in the github/docs repository</a></li>
+<li><a href="#reviewing">Reviewing</a>
+<ul>
+<li><a href="#self-review">Self review</a></li>
+<li><a href="#pull-request-template">Pull request template</a></li>
+<li><a href="#suggested-changes">Suggested changes</a></li>
+</ul>
+</li>
+<li><a href="#windows">Windows</a></li>
+</ul>
+
+
+
+
+
+  <h2 id="types-of-contributions-memo"><a class="anchor" href="#types-of-contributions-memo" title='Anchor for "Types of contributions :memo:".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Types of contributions :memo:</h2> 
+
+<p>You can contribute to the GitHub Docs content and site in several ways. This repo is a place to discuss and collaborate on docs.github.com! Our small, but mighty :muscle: docs team is maintaining this repo, to preserve our bandwidth, off topic conversations will be closed.</p>
+
+
+
+
+
+  <h3 id="mega-discussions"><a class="anchor" href="#mega-discussions" title='Anchor for ":mega: Discussions".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> :mega: Discussions</h3> 
+
+<p>Discussions are where we have conversations.</p>
+<p>If you&rsquo;d like help troubleshooting a docs PR you&rsquo;re working on, have a great new idea, or want to share something amazing you&rsquo;ve learned in our docs, join us in <a href="https://github.com/github/docs/discussions">discussions</a>.</p>
+
+
+
+
+
+  <h3 id="beetle-issues"><a class="anchor" href="#beetle-issues" title='Anchor for ":beetle: Issues".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> :beetle: Issues</h3> 
+
+<p><a href="https://docs.github.com/en/github/managing-your-work-on-github/about-issues">Issues</a> are used to track tasks that contributors can help with. If an issue has a triage label, we haven&rsquo;t reviewed it yet and you shouldn&rsquo;t begin work on it.</p>
+<p>If you&rsquo;ve found something in the content or the website that should be updated, search open issues to see if someone else has reported the same thing. If it&rsquo;s something new, open an issue using a <a href="https://github.com/github/docs/issues/new/choose">template</a>. We&rsquo;ll use the issue to have a conversation about the problem you want to fix.</p>
+
+
+
+
+
+  <h3 id="hammer_and_wrench-pull-requests"><a class="anchor" href="#hammer_and_wrench-pull-requests" title='Anchor for ":hammer_and_wrench: Pull requests".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> :hammer_and_wrench: Pull requests</h3> 
+
+<p>A <a href="https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests">pull request</a> is a way to suggest changes in our repository.</p>
+<p>When we merge those changes, they should be deployed to the live site within 24 hours. :earth_africa: To learn more about opening a pull request in this repo, see <a href="#opening-a-pull-request">Opening a pull request</a> below.</p>
+<p><strong>We do not currently accept contributions for translated content</strong>, but we hope to in the future.</p>
+
+
+
+
+
+  <h2 id="starting-with-an-issue"><a class="anchor" href="#starting-with-an-issue" title='Anchor for "Starting with an issue".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Starting with an issue</h2> 
+
+<p>You can browse existing issues to find something that needs help!</p>
+
+
+
+
+
+  <h3 id="labels"><a class="anchor" href="#labels" title='Anchor for "Labels".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Labels</h3> 
+
+<p>Labels can help you find an issue you&rsquo;d like to help with.</p>
+<ul>
+<li>The <a href="https://github.com/github/docs/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22"><code>help wanted</code> label</a> is for problems or updates that anyone in the community can start working on.</li>
+<li>The <a href="https://github.com/github/docs/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22"><code>good first issue</code> label</a> is for problems or updates we think are ideal for beginners.</li>
+<li>The <a href="https://github.com/github/docs/issues?q=is%3Aopen+is%3Aissue+label%3Acontent"><code>content</code> label</a> is for problems or updates in the content on docs.github.com. These will usually require some knowledge of Markdown.</li>
+<li>The <a href="https://github.com/github/docs/issues?q=is%3Aopen+is%3Aissue+label%3Aengineering"><code>engineering</code> label</a> is for problems or updates in the docs.github.com website. These will usually require some knowledge of JavaScript/Node.js or YAML to fix.</li>
+</ul>
+
+
+
+
+
+  <h2 id="opening-a-pull-request"><a class="anchor" href="#opening-a-pull-request" title='Anchor for "Opening a pull request".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Opening a pull request</h2> 
+
+<p>You can use the GitHub user interface :pencil2: for some small changes, like fixing a typo or updating a readme. You can also fork the repo and then clone it locally, to view changes and run your tests on your machine.</p>
+
+
+
+
+
+  <h2 id="working-in-the-githubdocs-repository"><a class="anchor" href="#working-in-the-githubdocs-repository" title='Anchor for "Working in the github/docs repository".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Working in the github/docs repository</h2> 
+
+<p>Here&rsquo;s some information that might be helpful while working on a Docs PR:</p>
+<ul>
+<li>
+<p><a href="/contributing/development.md">Development</a> - This short guide describes how to get this app running on your local machine.</p>
+</li>
+<li>
+<p><a href="/contributing/content-markup-reference.md">Content markup reference</a> - All of our content is written in GitHub-flavored Markdown, with some additional enhancements.</p>
+</li>
+<li>
+<p><a href="/contributing/content-style-guide.md">Content style guide for GitHub Docs</a> - This guide covers GitHub-specific information about how we style our content and images. It also links to the resources we use for general style guidelines.</p>
+</li>
+<li>
+<p><a href="/data/reusables/README.md">Reusables</a> - We use reusables to help us keep content up to date. Instead of writing the same long string of information in several articles, we create a reusable, then call it from the individual articles.</p>
+</li>
+<li>
+<p><a href="/data/variables/README.md">Variables</a> - We use variables the same way we use reusables. Variables are for short strings of reusable text.</p>
+</li>
+<li>
+<p><a href="/contributing/liquid-helpers.md">Liquid</a> - We use liquid helpers to create different versions of our content.</p>
+</li>
+<li>
+<p><a href="/script/README.md">Scripts</a> - The scripts directory is the home for all of the scripts you can run locally.</p>
+</li>
+<li>
+<p><a href="/tests/README.md">Tests</a> - We use tests to ensure content will render correctly on the site. Tests run automatically in your PR, and sometimes it&rsquo;s also helpful to run them locally.</p>
+</li>
+</ul>
+
+
+
+
+
+  <h2 id="reviewing"><a class="anchor" href="#reviewing" title='Anchor for "Reviewing".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Reviewing</h2> 
+
+<p>We (usually the docs team, but sometimes GitHub product managers, engineers, or supportocats too!) review every single PR. The purpose of reviews is to create the best content we can for people who use GitHub.</p>
+<p>:yellow_heart: Reviews are always respectful, acknowledging that everyone did the best possible job with the knowledge they had at the time.<br>
+:yellow_heart: Reviews discuss content, not the person who created it.<br>
+:yellow_heart: Reviews are constructive and start conversation around feedback.</p>
+
+
+
+
+
+  <h3 id="self-review"><a class="anchor" href="#self-review" title='Anchor for "Self review".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Self review</h3> 
+
+<p>You should always review your own PR first.</p>
+<p>For content changes, make sure that you:</p>
+<ul>
+<li><input disabled="" type="checkbox"> Confirm that the changes address every part of the content design plan from your issue (if there are differences, explain them).</li>
+<li><input disabled="" type="checkbox"> Review the content for technical accuracy.</li>
+<li><input disabled="" type="checkbox"> Review the entire pull request using the <a href="contributing/localization-checklist.md">localization checklist</a>.</li>
+<li><input disabled="" type="checkbox"> Copy-edit the changes for grammar, spelling, and adherence to the style guide.</li>
+<li><input disabled="" type="checkbox"> Check new or updated Liquid statements to confirm that versioning is correct.</li>
+<li><input disabled="" type="checkbox"> Check that all of your changes render correctly in staging. Remember, that lists and tables can be tricky.</li>
+<li><input disabled="" type="checkbox"> If there are any failing checks in your PR, troubleshoot them until they&rsquo;re all passing.</li>
+</ul>
+
+
+
+
+
+  <h3 id="pull-request-template"><a class="anchor" href="#pull-request-template" title='Anchor for "Pull request template".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Pull request template</h3> 
+
+<p>When you open a pull request, you must fill out the &ldquo;Ready for review&rdquo; template before we can review your PR. This template helps reviewers understand your changes and the purpose of your pull request.</p>
+
+
+
+
+
+  <h3 id="suggested-changes"><a class="anchor" href="#suggested-changes" title='Anchor for "Suggested changes".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Suggested changes</h3> 
+
+<p>We may ask for changes to be made before a PR can be merged, either using <a href="https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/incorporating-feedback-in-your-pull-request">suggested changes</a> or pull request comments. You can apply suggested changes directly through the UI. You can make any other changes in your fork, then commit them to your branch.</p>
+<p>As you update your PR and apply changes, mark each conversation as <a href="https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/commenting-on-a-pull-request#resolving-conversations">resolved</a>.</p>
+
+
+
+    </article>
+  </main>
+
+
+    </div>
+    
+    <footer>
+      
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="req-js">
+  <button class="outline-dashed" title="Change to light/dark mode."><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><use xlink:href="#adjust"/></svg></button><input class="outline-dashed" type="color" list="presets" value="#225670" title="Change accent color." aria-label="Change accent color."><datalist id="presets"><option value="#225670"><option value="#dd587c"></datalist>
+</section>
+
+
+
+
+
+    </footer>
+    
+    <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" aria-hidden="true">
+      <symbol viewBox="0 0 512 512" id="adjust">
+        <path d="M8 256c0 136.966 111.033 248 248 248s248-111.034 248-248S392.966 8 256 8 8 119.033 8 256zm248 184V72c101.705 0 184 82.311 184 184 0 101.705-82.311 184-184 184z"/>
+      </symbol>
+      
+      
+      
+      
+  
+<symbol viewBox="0 0 448 512" id="hashtag">
+  <path d="M440.667 182.109l7.143-40c1.313-7.355-4.342-14.109-11.813-14.109h-74.81l14.623-81.891C377.123 38.754 371.468 32 363.997 32h-40.632a12 12 0 0 0-11.813 9.891L296.175 128H197.54l14.623-81.891C213.477 38.754 207.822 32 200.35 32h-40.632a12 12 0 0 0-11.813 9.891L132.528 128H53.432a12 12 0 0 0-11.813 9.891l-7.143 40C33.163 185.246 38.818 192 46.289 192h74.81L98.242 320H19.146a12 12 0 0 0-11.813 9.891l-7.143 40C-1.123 377.246 4.532 384 12.003 384h74.81L72.19 465.891C70.877 473.246 76.532 480 84.003 480h40.632a12 12 0 0 0 11.813-9.891L151.826 384h98.634l-14.623 81.891C234.523 473.246 240.178 480 247.65 480h40.632a12 12 0 0 0 11.813-9.891L315.472 384h79.096a12 12 0 0 0 11.813-9.891l7.143-40c1.313-7.355-4.342-14.109-11.813-14.109h-74.81l22.857-128h79.096a12 12 0 0 0 11.813-9.891zM261.889 320h-98.634l22.857-128h98.634l-22.857 128z"/>
+</symbol>
+
+
+
+      
+      
+      
+    </svg>
+
+    
+    
+    
+
+      <script>
+        
+          'use strict';const PALETTE=document.querySelector('footer input');PALETTE.onchange=function(){const PICK=PALETTE.value;SHEET.setProperty('--accent',PICK);if(ROOT.dataset.mode==='light'){localStorage.setItem('lightAccent',PICK)}else{localStorage.setItem('darkAccent',PICK)};updateAccent()};
+        
+      </script>
+
+    
+    
+    
+    
+
+  </body>
+</html>

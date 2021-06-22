@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en" data-mode="light">
+  <head prefix="og: http://ogp.me/ns#">
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="Hugo 0.79.1">
+<meta name="theme" content="Color Your World -- gitlab.com/rmaguiar/hugo-theme-color-your-world">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<title>Syntax Documentation</title>
+
+
+
+
+
+
+<meta name="robots" content="index follow">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+
+
+
+  
+    <link rel="canonical" href="https://localhost:1313/angaza-repositories/steam/syntax/syntax/">
+  
+
+
+
+
+
+
+
+
+<meta property="og:site_name" content="">
+<meta property="og:title" content="Syntax Documentation">
+
+  <meta property="og:url" content="https://localhost:1313/angaza-repositories/steam/syntax/syntax/">
+
+
+
+
+
+
+
+
+  <meta property="og:type" content="website">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="theme-color" content="#222">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https:\/\/localhost:1313",
+      "inLanguage": "en",
+      "name": "",
+      "description": "My description",
+      "publisher": ""
+    }
+  </script>
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.min.d84e2ce7505598125c5ab36f34da937b4b82c47c75febcae168a1c199fcc589645e02149eebd96c683cc347c9d1170bfc9d33a54674c538946adebd5777e9ffd.css" integrity="sha512-2E4s51BVmBJcWrNvNNqTe0uCxHx1/ryuFoocGZ/MWJZF4CFJ7r2WxoPMNHydEXC/ydM6VGdMU4lGrevVd36f/Q==">
+
+
+
+<noscript>
+
+  
+  
+
+  
+    <meta name="theme-color" content="#dd587c" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#225670" media="(prefers-color-scheme: light)">
+  
+
+  <style>
+  
+    html {
+      --accent: #225670;
+    }
+  
+    .req-js,
+    img.lazyload {
+      display: none;
+    }
+    
+  </style>
+  
+</noscript>
+
+
+
+
+
+
+  <link rel="preload" href="/fonts/open-sans-v17-latin-700.woff" as="font" crossorigin="anonymous">
+
+  <link rel="preload" href="/fonts/open-sans-v17-latin-700.woff2" as="font" crossorigin="anonymous">
+
+  <link rel="preload" href="/fonts/open-sans-v17-latin-italic.woff" as="font" crossorigin="anonymous">
+
+  <link rel="preload" href="/fonts/open-sans-v17-latin-italic.woff2" as="font" crossorigin="anonymous">
+
+  <link rel="preload" href="/fonts/open-sans-v17-latin-regular.woff" as="font" crossorigin="anonymous">
+
+  <link rel="preload" href="/fonts/open-sans-v17-latin-regular.woff2" as="font" crossorigin="anonymous">
+
+  <link rel="preload" href="/fonts/oswald-v29-latin-700.woff" as="font" crossorigin="anonymous">
+
+  <link rel="preload" href="/fonts/oswald-v29-latin-700.woff2" as="font" crossorigin="anonymous">
+
+
+
+
+
+<script defer src="/js/lazysizes.min.min.a85a0eccaf9ef0d2f083a9dc4d0e05dc90acc5be0e84b43e20fde692871e1861ae0191f7c3ca2c00f2664efabf6aff2625a478b8f22ea43cb056cb6ec9a8d948.js" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    
+      'use strict';const PREFERS_LIGHT=window.matchMedia('(prefers-color-scheme: light)');const PREFERS_DARK=window.matchMedia('(prefers-color-scheme: dark)');const ROOT=document.documentElement;const SHEET=document.documentElement.style;const META_THEME_COLOR=document.querySelector('meta[name=theme-color]');function setDark(){ROOT.dataset.mode='dark'};function setLight(){ROOT.dataset.mode='light'};if(localStorage.getItem('isDark')=='true'){setDark()}else if(localStorage.getItem('isDark')=='false'){setLight()}else if(PREFERS_DARK.matches){setDark()}else if(PREFERS_LIGHT.matches){setLight()};function getAccent(){if(ROOT.dataset.mode==='dark'){if(localStorage.getItem('darkAccent')===null){var currentAccent="#dd587c"}else{var currentAccent=localStorage.getItem('darkAccent')
+}}else if(ROOT.dataset.mode==='light'){if(localStorage.getItem('lightAccent')===null){var currentAccent="#225670"}else{var currentAccent=localStorage.getItem('lightAccent')
+}};return currentAccent};var activeAccent=getAccent();SHEET.setProperty('--accent',activeAccent);META_THEME_COLOR.setAttribute('content',activeAccent);function updateAccent(){var activeAccent=getAccent();SHEET.setProperty('--accent',activeAccent);PALETTE.value=activeAccent;META_THEME_COLOR.setAttribute('content',activeAccent);};document.addEventListener('DOMContentLoaded',function(){PALETTE.value=activeAccent;function smoothTransition(){document.body.style.transition=document.querySelector('header').style.transition=document.querySelector('footer').style.transition='background-color .3s ease, color .3s ease'};function userModeChange(){smoothTransition();if(ROOT.dataset.mode=='light'){setDark();localStorage.setItem('isDark','true')
+}else{setLight();localStorage.setItem('isDark','false')
+};updateAccent()};function OSModeChange(){smoothTransition();if(PREFERS_LIGHT.matches){setLight();localStorage.setItem('isDark','false')
+}else if(PREFERS_DARK.matches){setDark();localStorage.setItem('isDark','true')
+};updateAccent()};PREFERS_LIGHT.addListener(OSModeChange);PREFERS_DARK.addListener(OSModeChange);document.querySelector('footer button').addEventListener('click',userModeChange)})
+    
+  </script>
+
+
+
+  </head>
+
+  <body>
+
+    <header>
+      
+
+  <a href="/"></a>
+
+
+
+
+
+    </header>
+
+    <div class="filler">
+      
+
+  <main>
+    <article>
+      <header>
+        
+        <h1>Syntax Documentation</h1>
+
+        
+        
+        
+        
+      </header>
+    
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>This explains the different components included in the steam web application and the functions there in.</p>
+<blockquote>
+<p>All component code is written in the path /src/app folder</p>
+</blockquote>
+<blockquote>
+<p>All assets are stored in the path /src/assets folder</p>
+</blockquote>
+<blockquote>
+<p>Environment variables are present in the /src/environment folder</p>
+</blockquote>
+
+
+
+
+
+  <h2 id="src-app"><a class="anchor" href="#src-app" title='Anchor for "/src /app".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> /src /app</h2> 
+
+<p>The project pages are built up of the following components:</p>
+<ul>
+<li>Age-Group</li>
+<li>Code</li>
+<li>Content</li>
+<li>Course</li>
+<li>Login</li>
+<li>Notes</li>
+<li>Project</li>
+<li>Resources</li>
+<li>Signup</li>
+<li>Topics</li>
+</ul>
+<p>The services used to access the api are under the following:-</p>
+<blockquote>
+<p>api.service.ts
+auth.service.ts</p>
+</blockquote>
+<p>The route gurads used to control page access are under the following file:-</p>
+<blockquote>
+<p>auth.guard.ts</p>
+</blockquote>
+
+
+
+
+
+  <h1 id="appcomponentts">App.component.ts</h1> 
+
+<p>The app component.ts file is the entry point for our application. It imports some of the necessary services to help our application work off the bat these include the <code>ToastrService</code> and the <code>ApiService</code></p>
+<p><code>ToastrService</code> is used to display notifications on the screen. For use reference <a href="https://www.npmjs.com/package/ngx-toastr">ngx-toastr</a></p>
+<p>The main function here is to navigate to the expected normally either the login page or the application landing page.</p>
+<p><code>@angular/router</code> is used in the constructor to control navigation.</p>
+
+
+
+
+
+  <h1 id="app-routingmodulets">app-routing.module.ts</h1> 
+
+<p>This holds the routes in our application.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">const routes: Routes <span style="color:#f92672">=</span> <span style="color:#f92672">[</span>
+   
+      <span style="color:#f92672">{</span>
+        path: <span style="color:#e6db74">&#39;login&#39;</span>,
+        component: LoginComponent
+      <span style="color:#f92672">}</span>,
+      <span style="color:#f92672">{</span>
+        path: <span style="color:#e6db74">&#39;register&#39;</span>,
+        component: SignupComponent
+      <span style="color:#f92672">}</span>,
+      <span style="color:#f92672">{</span>
+        path: <span style="color:#e6db74">&#39;course&#39;</span>,
+        component: CourseComponent
+      <span style="color:#f92672">}</span>,
+      <span style="color:#f92672">{</span>
+        path: <span style="color:#e6db74">&#39;age-group&#39;</span>,
+        children: <span style="color:#f92672">[</span>
+          <span style="color:#f92672">{</span>
+            path: <span style="color:#e6db74">&#39;:course&#39;</span>,
+            component: AgeGroupComponent
+          <span style="color:#f92672">}</span>,
+          <span style="color:#f92672">{</span>
+            path: <span style="color:#e6db74">&#39;:course/content&#39;</span>,
+            component: ContentComponent,
+            children: <span style="color:#f92672">[</span>
+              <span style="color:#f92672">{</span>
+                path: <span style="color:#e6db74">&#39;notes&#39;</span>,
+                component: NotesComponent
+              <span style="color:#f92672">}</span>,
+              <span style="color:#f92672">{</span>
+                path: <span style="color:#e6db74">&#39;code&#39;</span>,
+                component: CodeComponent
+              <span style="color:#f92672">}</span>,
+              <span style="color:#f92672">{</span>
+                path: <span style="color:#e6db74">&#39;project&#39;</span>,
+                component: ProjectComponent
+              <span style="color:#f92672">}</span>,
+              <span style="color:#f92672">{</span>
+                path: <span style="color:#e6db74">&#39;resources&#39;</span>,
+                component: ResourcesComponent
+              <span style="color:#f92672">}</span>
+            <span style="color:#f92672">]</span>
+          <span style="color:#f92672">}</span>
+        <span style="color:#f92672">]</span>
+      <span style="color:#f92672">}</span>,
+      
+    
+    
+  
+<span style="color:#f92672">]</span>;
+</code></pre></div><p>All components are defined under the routes constant and the path in order to access the component are shown.</p>
+
+
+
+
+
+  <h1 id="apiservicets">api.service.ts</h1> 
+
+<p>This file contains all the calls made to the API. The return type is a json object or an error to the component where it is handled.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">     api_url: string <span style="color:#f92672">=</span> environment.DEV_URL; //API URL definitions referenced from environment file
+</code></pre></div>
+
+
+
+
+  <h5 id="functions"><a class="anchor" href="#functions" title='Anchor for "Functions".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Functions</h5> 
+
+<hr>
+
+
+
+
+
+  <h6 id="logging-in"><a class="anchor" href="#logging-in" title='Anchor for "Logging In".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Logging In</h6> 
+
+<hr>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">login</span>(<span style="color:#a6e22e">formData</span>) {
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">data</span> <span style="color:#f92672">=</span> {
+      <span style="color:#a6e22e">username</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">formData</span>.<span style="color:#a6e22e">username</span>,
+      <span style="color:#a6e22e">password</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">formData</span>.<span style="color:#a6e22e">password</span>
+    }
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">data</span>);
+
+    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">post</span>(<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">api_url</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;/api/auth/login&#39;</span>, <span style="color:#a6e22e">data</span>);
+  }
+</code></pre></div><p>Login Request with the /api/auth/login endpoint.
+Sample Response</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+    <span style="color:#f92672">&#34;access_token&#34;</span>: <span style="color:#e6db74">&#34;TOKEN_TEXT_HERE&#34;</span>,
+    <span style="color:#f92672">&#34;token_type&#34;</span>: <span style="color:#e6db74">&#34;Bearer&#34;</span>,
+    <span style="color:#f92672">&#34;expires_at&#34;</span>: <span style="color:#e6db74">&#34;2022-03-03 01:44:16&#34;</span>,
+    <span style="color:#f92672">&#34;user&#34;</span>: {
+        <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#ae81ff">3856</span>,
+        <span style="color:#f92672">&#34;username&#34;</span>: <span style="color:#e6db74">&#34;JOHN_DOE&#34;</span>,
+        <span style="color:#f92672">&#34;firstname&#34;</span>: <span style="color:#e6db74">&#34;JOHN&#34;</span>,
+        <span style="color:#f92672">&#34;lastname&#34;</span>: <span style="color:#e6db74">&#34;DOE&#34;</span>,
+        <span style="color:#f92672">&#34;email&#34;</span>: <span style="color:#e6db74">&#34;johndoe@gmail.com&#34;</span>,
+        <span style="color:#f92672">&#34;email_verified_at&#34;</span>: <span style="color:#66d9ef">null</span>,
+        <span style="color:#f92672">&#34;user_type&#34;</span>: <span style="color:#e6db74">&#34;student&#34;</span>,
+        <span style="color:#f92672">&#34;school_code&#34;</span>: <span style="color:#e6db74">&#34;4801&#34;</span>,
+        <span style="color:#f92672">&#34;last_login&#34;</span>: {
+            <span style="color:#f92672">&#34;date&#34;</span>: <span style="color:#e6db74">&#34;2021-03-03 01:44:16.141295&#34;</span>,
+            <span style="color:#f92672">&#34;timezone_type&#34;</span>: <span style="color:#ae81ff">3</span>,
+            <span style="color:#f92672">&#34;timezone&#34;</span>: <span style="color:#e6db74">&#34;Africa/Nairobi&#34;</span>
+        },
+        <span style="color:#f92672">&#34;class&#34;</span>: <span style="color:#e6db74">&#34;9&#34;</span>,
+        <span style="color:#f92672">&#34;created_at&#34;</span>: <span style="color:#e6db74">&#34;2021-01-28 16:29:36&#34;</span>,
+        <span style="color:#f92672">&#34;updated_at&#34;</span>: <span style="color:#e6db74">&#34;2021-03-03 01:44:16&#34;</span>,
+        <span style="color:#f92672">&#34;student_code&#34;</span>: <span style="color:#e6db74">&#34;4801171&#34;</span>,
+        <span style="color:#f92672">&#34;phone&#34;</span>: <span style="color:#e6db74">&#34;0702124316&#34;</span>,
+        <span style="color:#f92672">&#34;reset_code&#34;</span>: <span style="color:#66d9ef">null</span>,
+        <span style="color:#f92672">&#34;phone_confirmation&#34;</span>: <span style="color:#66d9ef">null</span>,
+        <span style="color:#f92672">&#34;phone_confirmation_status&#34;</span>: <span style="color:#e6db74">&#34;unconfirmed&#34;</span>,
+        <span style="color:#f92672">&#34;user_account_status&#34;</span>: <span style="color:#ae81ff">0</span>
+    },
+    <span style="color:#f92672">&#34;login_time&#34;</span>: <span style="color:#ae81ff">1614725056</span>,
+    <span style="color:#f92672">&#34;subscription&#34;</span>: [
+        {
+            <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#ae81ff">1801</span>,
+            <span style="color:#f92672">&#34;user_id&#34;</span>: <span style="color:#ae81ff">3856</span>,
+            <span style="color:#f92672">&#34;plan_id&#34;</span>: <span style="color:#ae81ff">7</span>,
+            <span style="color:#f92672">&#34;activation_status&#34;</span>: <span style="color:#ae81ff">1</span>,
+            <span style="color:#f92672">&#34;expiry_timestamp&#34;</span>: <span style="color:#e6db74">&#34;-0001-11-30 00:00:00&#34;</span>,
+            <span style="color:#f92672">&#34;started_at&#34;</span>: <span style="color:#e6db74">&#34;-0001-11-30 00:00:00&#34;</span>,
+            <span style="color:#f92672">&#34;expired&#34;</span>: <span style="color:#ae81ff">0</span>,
+            <span style="color:#f92672">&#34;created_at&#34;</span>: <span style="color:#e6db74">&#34;2021-01-28 16:29:36&#34;</span>,
+            <span style="color:#f92672">&#34;updated_at&#34;</span>: <span style="color:#e6db74">&#34;2021-01-28 16:29:36&#34;</span>,
+            <span style="color:#f92672">&#34;plan&#34;</span>: <span style="color:#66d9ef">null</span>
+        }
+    ]
+}
+</code></pre></div>
+
+
+
+
+  <h6 id="registration"><a class="anchor" href="#registration" title='Anchor for "Registration".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Registration</h6> 
+
+<hr>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">register</span>(<span style="color:#a6e22e">formData</span>){
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">data</span> <span style="color:#f92672">=</span> {
+      <span style="color:#a6e22e">username</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">formData</span>.<span style="color:#a6e22e">username</span>,
+      <span style="color:#a6e22e">password</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">formData</span>.<span style="color:#a6e22e">password</span>,
+      <span style="color:#a6e22e">first_name</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">formData</span>.<span style="color:#a6e22e">first_name</span>,
+      <span style="color:#a6e22e">last_name</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">formData</span>.<span style="color:#a6e22e">last_name</span>,
+      <span style="color:#a6e22e">phone</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">formData</span>.<span style="color:#a6e22e">phone</span>
+    }
+
+    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">post</span>(<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">api_url</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;/api/auth/signup&#39;</span>, <span style="color:#a6e22e">data</span>);
+  }
+</code></pre></div><p>The above constitutes the request for registration.
+Response received is similar to that of login on successful registration</p>
+
+
+
+
+
+  <h6 id="topic-retrieval"><a class="anchor" href="#topic-retrieval" title='Anchor for "Topic Retrieval".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Topic Retrieval</h6> 
+
+<hr>
+<p>Topic Request includes a call to the API with a <code>course_id and level_id</code> parameter</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"> <span style="color:#a6e22e">getTopics</span>(<span style="color:#a6e22e">course_id</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">number</span>, <span style="color:#a6e22e">level_id</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">number</span>) {
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">data</span> <span style="color:#f92672">=</span> {
+      <span style="color:#a6e22e">course_id</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">course_id</span>,
+      <span style="color:#a6e22e">level_id</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">level_id</span>
+    };
+    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">post</span>(<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">api_url</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;/api/steamTopics&#39;</span>, <span style="color:#a6e22e">data</span>).<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">retry</span>(<span style="color:#ae81ff">1</span>),
+      <span style="color:#a6e22e">catchError</span>(<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">handleError</span>)
+    );
+  }
+</code></pre></div><p>Simple request to retrive topics for our curriculum</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+    <span style="color:#f92672">&#34;topics&#34;</span>: [
+        {
+            <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#ae81ff">10</span>,
+            <span style="color:#f92672">&#34;subject_id&#34;</span>: <span style="color:#ae81ff">8</span>,
+            <span style="color:#f92672">&#34;topic_name&#34;</span>: <span style="color:#e6db74">&#34;Natural Numbers&#34;</span>,
+            <span style="color:#f92672">&#34;class&#34;</span>: <span style="color:#ae81ff">9</span>,
+            <span style="color:#f92672">&#34;created_at&#34;</span>: <span style="color:#e6db74">&#34;2019-09-03 17:08:06&#34;</span>,
+            <span style="color:#f92672">&#34;updated_at&#34;</span>: <span style="color:#e6db74">&#34;2019-09-03 17:08:06&#34;</span>
+        },
+        {
+            <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#ae81ff">14</span>,
+            <span style="color:#f92672">&#34;subject_id&#34;</span>: <span style="color:#ae81ff">8</span>,
+            <span style="color:#f92672">&#34;topic_name&#34;</span>: <span style="color:#e6db74">&#34;Greatest Common Divisor&#34;</span>,
+            <span style="color:#f92672">&#34;class&#34;</span>: <span style="color:#ae81ff">9</span>,
+            <span style="color:#f92672">&#34;created_at&#34;</span>: <span style="color:#e6db74">&#34;2019-09-04 09:58:58&#34;</span>,
+            <span style="color:#f92672">&#34;updated_at&#34;</span>: <span style="color:#e6db74">&#34;2019-09-04 09:58:58&#34;</span>
+        },
+        {
+            <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#ae81ff">15</span>,
+            <span style="color:#f92672">&#34;subject_id&#34;</span>: <span style="color:#ae81ff">8</span>,
+            <span style="color:#f92672">&#34;topic_name&#34;</span>: <span style="color:#e6db74">&#34;Least Common Multiple&#34;</span>,
+            <span style="color:#f92672">&#34;class&#34;</span>: <span style="color:#ae81ff">9</span>,
+            <span style="color:#f92672">&#34;created_at&#34;</span>: <span style="color:#e6db74">&#34;2019-09-04 10:00:08&#34;</span>,
+            <span style="color:#f92672">&#34;updated_at&#34;</span>: <span style="color:#e6db74">&#34;2019-09-04 10:00:08&#34;</span>
+        }]
+}
+</code></pre></div><p>This is a sample topic response</p>
+
+
+
+
+
+  <h6 id="subtopics"><a class="anchor" href="#subtopics" title='Anchor for "Subtopics".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Subtopics</h6> 
+
+<hr>
+<p>Subtopic Request includes a call to the API with a <code>topic_id</code> parameter</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">getSubtopics</span>(<span style="color:#a6e22e">topic_id</span>) {
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">data</span> <span style="color:#f92672">=</span> {
+      <span style="color:#a6e22e">subtopic_id</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">topic_id</span>
+    }
+    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">post</span>(<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">api_url</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;/api/steamSubtopics&#39;</span>, <span style="color:#a6e22e">data</span>)
+      .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">retry</span>(<span style="color:#ae81ff">1</span>),
+        <span style="color:#a6e22e">catchError</span>(<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">handleError</span>)
+      );
+  }
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+    <span style="color:#f92672">&#34;subtopics&#34;</span>: [
+        {
+            <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#ae81ff">10</span>,
+            <span style="color:#f92672">&#34;subject_id&#34;</span>: <span style="color:#ae81ff">8</span>,
+            <span style="color:#f92672">&#34;subtopic_name&#34;</span>: <span style="color:#e6db74">&#34;Natural Numbers&#34;</span>,
+            <span style="color:#f92672">&#34;class&#34;</span>: <span style="color:#ae81ff">9</span>,
+            <span style="color:#f92672">&#34;created_at&#34;</span>: <span style="color:#e6db74">&#34;2019-09-03 17:08:06&#34;</span>,
+            <span style="color:#f92672">&#34;updated_at&#34;</span>: <span style="color:#e6db74">&#34;2019-09-03 17:08:06&#34;</span>
+        },
+        {
+            <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#ae81ff">14</span>,
+            <span style="color:#f92672">&#34;subject_id&#34;</span>: <span style="color:#ae81ff">8</span>,
+            <span style="color:#f92672">&#34;subtopic_name&#34;</span>: <span style="color:#e6db74">&#34;Greatest Common Divisor&#34;</span>,
+            <span style="color:#f92672">&#34;class&#34;</span>: <span style="color:#ae81ff">9</span>,
+            <span style="color:#f92672">&#34;created_at&#34;</span>: <span style="color:#e6db74">&#34;2019-09-04 09:58:58&#34;</span>,
+            <span style="color:#f92672">&#34;updated_at&#34;</span>: <span style="color:#e6db74">&#34;2019-09-04 09:58:58&#34;</span>
+        },
+        {
+            <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#ae81ff">15</span>,
+            <span style="color:#f92672">&#34;subject_id&#34;</span>: <span style="color:#ae81ff">8</span>,
+            <span style="color:#f92672">&#34;subtopic_name&#34;</span>: <span style="color:#e6db74">&#34;Least Common Multiple&#34;</span>,
+            <span style="color:#f92672">&#34;class&#34;</span>: <span style="color:#ae81ff">9</span>,
+            <span style="color:#f92672">&#34;created_at&#34;</span>: <span style="color:#e6db74">&#34;2019-09-04 10:00:08&#34;</span>,
+            <span style="color:#f92672">&#34;updated_at&#34;</span>: <span style="color:#e6db74">&#34;2019-09-04 10:00:08&#34;</span>
+        }]
+}
+</code></pre></div><p>Sample Subtopic Reponse above</p>
+
+
+
+
+
+  <h2 id="development"><a class="anchor" href="#development" title='Anchor for "Development".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Development</h2> 
+
+<p>Want to contribute? Great!</p>
+<p>For a great place to start visit our repositories and have a look at the feature requests and the issues.</p>
+<p>Fork and create a branch on the feature/issue you will be working on.</p>
+<p>Create a pull request&hellip; we will review and be in contact.</p>
+<p>For other clarifications you can contact <a href="mailto:info@angazaelimu.com">info@angazaelimu.com</a></p>
+<p>Angaza Steam uses Webpack for fast developing.
+Make a change in your file and instantaneously see your updates in the browser!</p>
+
+
+
+
+
+  <h4 id="building-for-source"><a class="anchor" href="#building-for-source" title='Anchor for "Building for source".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> Building for source</h4> 
+
+<p>For production release:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ng build --prod
+</code></pre></div><blockquote>
+<p>Note: <code>--capt-add=SYS-ADMIN</code> is required for PDF rendering.</p>
+</blockquote>
+
+
+
+
+
+  <h2 id="license"><a class="anchor" href="#license" title='Anchor for "License".'><svg aria-hidden="true"><use xlink:href="#hashtag"/></svg></a> License</h2> 
+
+<p>LGPL 3.0</p>
+<p><strong>Happy Learning</strong></p>
+
+
+
+    </article>
+  </main>
+
+
+    </div>
+    
+    <footer>
+      
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="req-js">
+  <button class="outline-dashed" title="Change to light/dark mode."><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><use xlink:href="#adjust"/></svg></button><input class="outline-dashed" type="color" list="presets" value="#225670" title="Change accent color." aria-label="Change accent color."><datalist id="presets"><option value="#225670"><option value="#dd587c"></datalist>
+</section>
+
+
+
+
+
+    </footer>
+    
+    <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" aria-hidden="true">
+      <symbol viewBox="0 0 512 512" id="adjust">
+        <path d="M8 256c0 136.966 111.033 248 248 248s248-111.034 248-248S392.966 8 256 8 8 119.033 8 256zm248 184V72c101.705 0 184 82.311 184 184 0 101.705-82.311 184-184 184z"/>
+      </symbol>
+      
+      
+      
+      
+  
+<symbol viewBox="0 0 448 512" id="hashtag">
+  <path d="M440.667 182.109l7.143-40c1.313-7.355-4.342-14.109-11.813-14.109h-74.81l14.623-81.891C377.123 38.754 371.468 32 363.997 32h-40.632a12 12 0 0 0-11.813 9.891L296.175 128H197.54l14.623-81.891C213.477 38.754 207.822 32 200.35 32h-40.632a12 12 0 0 0-11.813 9.891L132.528 128H53.432a12 12 0 0 0-11.813 9.891l-7.143 40C33.163 185.246 38.818 192 46.289 192h74.81L98.242 320H19.146a12 12 0 0 0-11.813 9.891l-7.143 40C-1.123 377.246 4.532 384 12.003 384h74.81L72.19 465.891C70.877 473.246 76.532 480 84.003 480h40.632a12 12 0 0 0 11.813-9.891L151.826 384h98.634l-14.623 81.891C234.523 473.246 240.178 480 247.65 480h40.632a12 12 0 0 0 11.813-9.891L315.472 384h79.096a12 12 0 0 0 11.813-9.891l7.143-40c1.313-7.355-4.342-14.109-11.813-14.109h-74.81l22.857-128h79.096a12 12 0 0 0 11.813-9.891zM261.889 320h-98.634l22.857-128h98.634l-22.857 128z"/>
+</symbol>
+
+
+
+      
+      
+      
+    </svg>
+
+    
+    
+    
+
+      <script>
+        
+          'use strict';const PALETTE=document.querySelector('footer input');PALETTE.onchange=function(){const PICK=PALETTE.value;SHEET.setProperty('--accent',PICK);if(ROOT.dataset.mode==='light'){localStorage.setItem('lightAccent',PICK)}else{localStorage.setItem('darkAccent',PICK)};updateAccent()};
+        
+      </script>
+
+    
+    
+    
+    
+
+  </body>
+</html>

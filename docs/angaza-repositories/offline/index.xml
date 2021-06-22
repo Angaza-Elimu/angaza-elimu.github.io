@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>https://localhost:1313/angaza-repositories/offline/</link>
+    <description>My description</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://localhost:1313/angaza-repositories/offline/index.xml" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Contribution Guidelines</title>
+        <link>https://localhost:1313/angaza-repositories/offline/contribution-guidelines/contribution/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://localhost:1313/angaza-repositories/offline/contribution-guidelines/contribution/</guid>
+        <description>Describe the bug A clear and concise description of what the bug is.
+Current Behavior
+ What code are you running and what is happening? Include a screenshot if it makes sense.  Expected Behavior
+ What do you expect should be happening?   How to reproduce  You must provide a way to reproduce the problem. Either re-create the bug on Snack or link to a GitHub repository with code that reproduces the bug.</description>
+      </item>
+    
+      <item>
+        <title>Getting Started</title>
+        <link>https://localhost:1313/angaza-repositories/offline/getting-started/getting-started/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://localhost:1313/angaza-repositories/offline/getting-started/getting-started/</guid>
+        <description>React Native Offline First Library This project is a library that implements an offline first approach with SQLite and React Native (featuring TypeScript and CocoaPods under the hood).The library stores requests to local memory in abscence of a connection and share These instructions only cover iOS usage at this time.
+ Install JS dependencies npm install offline-react-sync   Install iOS dependencies (requires Cocoapods) pushd ios/ pod install popd   Start the React Native Metro Bundler npm start   Compile TypeScript source in watch mode npm run tsc -- -w   Run the Jest tests in watch mode npm test   Open the source in VS Code code .</description>
+      </item>
+    
+  </channel>
+</rss>
