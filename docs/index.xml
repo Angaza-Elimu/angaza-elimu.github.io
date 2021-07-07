@@ -2,101 +2,92 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title></title>
-    <link>https://localhost:1313/</link>
-    <description>My description</description>
+    <link>https://angaza-elimu.github.io/</link>
+    <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-      <item>
-        <title>Adaptive Learning Model</title>
-        <link>https://localhost:1313/angaza-repositories/model/model/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://localhost:1313/angaza-repositories/model/model/</guid>
-        <description></description>
-      </item>
+    <language>en-us</language><atom:link href="https://angaza-elimu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Contribution Guidelines</title>
+      <link>https://angaza-elimu.github.io/mobile/contribution-guidelines/contribution-guidelines/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://angaza-elimu.github.io/mobile/contribution-guidelines/contribution-guidelines/</guid>
+      <description>Contributing to this repository  Getting started  Before you begin:
+ This site is powered by Node.js. Check to see if you&amp;rsquo;re on the version of node we support. Have you read the code of conduct? Check out the existing issues &amp;amp; see if we accept contributions for your type of issue.  Use the &amp;lsquo;make a contribution&amp;rsquo; button Navigating a new codebase can be challenging, so we&amp;rsquo;re making that a little easier.</description>
+    </item>
     
-      <item>
-        <title>Contribution Guidelines</title>
-        <link>https://localhost:1313/angaza-repositories/mobile/contribution-guidelines/contribution-guidelines/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://localhost:1313/angaza-repositories/mobile/contribution-guidelines/contribution-guidelines/</guid>
-        <description>Contributing to this repository   Getting started  Before you begin:
- This site is powered by Node.js. Check to see if you&amp;rsquo;re on the version of node we support. Have you read the code of conduct? Check out the existing issues &amp;amp; see if we accept contributions for your type of issue.   Use the &amp;lsquo;make a contribution&amp;rsquo; button Navigating a new codebase can be challenging, so we&amp;rsquo;re making that a little easier.</description>
-      </item>
-    
-      <item>
-        <title>Contribution Guidelines</title>
-        <link>https://localhost:1313/angaza-repositories/offline/contribution-guidelines/contribution/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://localhost:1313/angaza-repositories/offline/contribution-guidelines/contribution/</guid>
-        <description>Describe the bug A clear and concise description of what the bug is.
+    <item>
+      <title>Contribution Guidelines</title>
+      <link>https://angaza-elimu.github.io/offline/contribution-guidelines/contribution/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://angaza-elimu.github.io/offline/contribution-guidelines/contribution/</guid>
+      <description>Describe the bug A clear and concise description of what the bug is.
 Current Behavior
  What code are you running and what is happening? Include a screenshot if it makes sense.  Expected Behavior
- What do you expect should be happening?   How to reproduce  You must provide a way to reproduce the problem. Either re-create the bug on Snack or link to a GitHub repository with code that reproduces the bug.</description>
-      </item>
+ What do you expect should be happening?  How to reproduce  You must provide a way to reproduce the problem. Either re-create the bug on Snack or link to a GitHub repository with code that reproduces the bug.</description>
+    </item>
     
-      <item>
-        <title>Getting Started</title>
-        <link>https://localhost:1313/angaza-repositories/offline/getting-started/getting-started/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://localhost:1313/angaza-repositories/offline/getting-started/getting-started/</guid>
-        <description>React Native Offline First Library This project is a library that implements an offline first approach with SQLite and React Native (featuring TypeScript and CocoaPods under the hood).The library stores requests to local memory in abscence of a connection and share These instructions only cover iOS usage at this time.
- Install JS dependencies npm install offline-react-sync   Install iOS dependencies (requires Cocoapods) pushd ios/ pod install popd   Start the React Native Metro Bundler npm start   Compile TypeScript source in watch mode npm run tsc -- -w   Run the Jest tests in watch mode npm test   Open the source in VS Code code .</description>
-      </item>
+    <item>
+      <title>Getting Started</title>
+      <link>https://angaza-elimu.github.io/offline/getting-started/getting-started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://angaza-elimu.github.io/offline/getting-started/getting-started/</guid>
+      <description>React Native Offline First Library This project is a library that implements an offline first approach with SQLite and React Native (featuring TypeScript and CocoaPods under the hood).The library stores requests to local memory in abscence of a connection and share These instructions only cover iOS usage at this time.
+Install JS dependencies npm install offline-react-sync  Install iOS dependencies (requires Cocoapods) pushd ios/ pod install popd  Start the React Native Metro Bundler npm start  Compile TypeScript source in watch mode npm run tsc -- -w  Run the Jest tests in watch mode npm test  Open the source in VS Code code .</description>
+    </item>
     
-      <item>
-        <title>Getting Started</title>
-        <link>https://localhost:1313/angaza-repositories/steam/getting-started/getting-started/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://localhost:1313/angaza-repositories/steam/getting-started/getting-started/</guid>
-        <description>ANGAZA STEAM PLATFORM  A module that leverages the Angaza Science, Tech, Arts and Mathematics content Angaza Steam is a cross-device compatible web platform site used to distribute course content on the Steam topics.
- Tech Angaza Steam Module uses a number of open source projects to work properly:
+    <item>
+      <title>Getting Started</title>
+      <link>https://angaza-elimu.github.io/steam/getting-started/getting-started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://angaza-elimu.github.io/steam/getting-started/getting-started/</guid>
+      <description>ANGAZA STEAM PLATFORM A module that leverages the Angaza Science, Tech, Arts and Mathematics content Angaza Steam is a cross-device compatible web platform site used to distribute course content on the Steam topics.
+Tech Angaza Steam Module uses a number of open source projects to work properly:
  Angular - HTML enhanced for web apps! npm - Used as a package manager Laravel - PHP framework used for retrieval and serving of content Composer - PHP package manager  And of course Angaza Steam itself is open source with a public repository on GitHub.</description>
-      </item>
+    </item>
     
-      <item>
-        <title>Introduction</title>
-        <link>https://localhost:1313/angaza-repositories/mobile/introduction/introduction/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://localhost:1313/angaza-repositories/mobile/introduction/introduction/</guid>
-        <description>ANGAZA MOBILE APP The product is an application built in Expo-React-Native in order to provide an offline first approach to users with devices in areas with low connectivity.
+    <item>
+      <title>Introduction</title>
+      <link>https://angaza-elimu.github.io/mobile/introduction/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://angaza-elimu.github.io/mobile/introduction/introduction/</guid>
+      <description>ANGAZA MOBILE APP The product is an application built in Expo-React-Native in order to provide an offline first approach to users with devices in areas with low connectivity.
 The below are instructions when it comes to running the application or extending our work in your local environment.
 This project was bootstrapped with Create React Native App.
 Below you&amp;rsquo;ll find information about performing common tasks. The most recent version of this guide is available here.</description>
-      </item>
+    </item>
     
-      <item>
-        <title>Syntax</title>
-        <link>https://localhost:1313/angaza-repositories/mobile/syntax/syntax/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://localhost:1313/angaza-repositories/mobile/syntax/syntax/</guid>
-        <description>This explains the different components included in the Mobile application and the functions there in.
+    <item>
+      <title>Syntax</title>
+      <link>https://angaza-elimu.github.io/mobile/syntax/syntax/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://angaza-elimu.github.io/mobile/syntax/syntax/</guid>
+      <description>This explains the different components included in the Mobile application and the functions there in.
  All component code is written in the path /src/app folder
   All assets are stored in the path /src/assets folder
   Environment variables are present in the /src/environment folder
-  /src /app The project pages are built up of the following Screens:
+ /src /app The project pages are built up of the following Screens:
  AccountType Assignment BottomTab Classes Home HomeScreen Landing Login Notes Topics Notifications OneTimePassword PhoneConfirm Profile Progress Quiz  The services used to access the api are under the following:-</description>
-      </item>
+    </item>
     
-      <item>
-        <title>Syntax Documentation</title>
-        <link>https://localhost:1313/angaza-repositories/steam/syntax/syntax/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://localhost:1313/angaza-repositories/steam/syntax/syntax/</guid>
-        <description>This explains the different components included in the steam web application and the functions there in.
+    <item>
+      <title>Syntax Documentation</title>
+      <link>https://angaza-elimu.github.io/steam/syntax/syntax/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://angaza-elimu.github.io/steam/syntax/syntax/</guid>
+      <description>This explains the different components included in the steam web application and the functions there in.
  All component code is written in the path /src/app folder
   All assets are stored in the path /src/assets folder
   Environment variables are present in the /src/environment folder
-  /src /app The project pages are built up of the following components:
+ /src /app The project pages are built up of the following components:
  Age-Group Code Content Course Login Notes Project Resources Signup Topics  The services used to access the api are under the following:-</description>
-      </item>
+    </item>
     
   </channel>
 </rss>

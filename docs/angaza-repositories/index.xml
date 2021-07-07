@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title></title>
-    <link>https://localhost:1313/angaza-repositories/</link>
-    <description>My description</description>
+    <title>Angaza repositories on </title>
+    <link>https://angaza-elimu.github.io/angaza-repositories/</link>
+    <description>Recent content in Angaza repositories on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://localhost:1313/angaza-repositories/index.xml" rel="self" type="application/rss+xml" />
-      <item>
-        <title>Adaptive Learning Model</title>
-        <link>https://localhost:1313/angaza-repositories/model/model/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://localhost:1313/angaza-repositories/model/model/</guid>
-        <description></description>
-      </item>
+    <language>en-us</language><atom:link href="https://angaza-elimu.github.io/angaza-repositories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adaptive Learning Model</title>
+      <link>https://angaza-elimu.github.io/angaza-repositories/model/model/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://angaza-elimu.github.io/angaza-repositories/model/model/</guid>
+      <description>ANGAZA ADAPTIVE LEARNING MODEL The aim of this system is to optimize content to adjust for the learner&amp;rsquo;s goals and current state of knowledge.
+The system decides which content to show the learner based on the trained data from the Angaza Elimu DB. And determines what learning path that a student should be put on based on the Item Response theory.
+Table of Contents  Feature Selection Feature Validation Automation Pipeline APIs Setting Up Running Tests  </description>
+    </item>
     
   </channel>
 </rss>

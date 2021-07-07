@@ -1,125 +1,82 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
+  <url>
+    <loc>https://angaza-elimu.github.io/</loc>
+    <priority>0</priority>
+  </url>
   
-    <url>
-      <loc>https://localhost:1313/angaza-repositories/model/model/</loc>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    </url>
-    
+  <url>
+    <loc>https://angaza-elimu.github.io/model/</loc>
+  </url>
   
+  <url>
+    <loc>https://angaza-elimu.github.io/mobile/</loc>
+  </url>
   
-    <url>
-      <loc>https://localhost:1313/angaza-repositories/mobile/contribution-guidelines/contribution-guidelines/</loc>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    </url>
-    
+  <url>
+    <loc>https://angaza-elimu.github.io/model/automation/</loc>
+  </url>
   
+  <url>
+    <loc>https://angaza-elimu.github.io/categories/</loc>
+  </url>
   
-    <url>
-      <loc>https://localhost:1313/angaza-repositories/offline/contribution-guidelines/contribution/</loc>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    </url>
-    
+  <url>
+    <loc>https://angaza-elimu.github.io/mobile/contribution-guidelines/contribution-guidelines/</loc>
+  </url>
   
+  <url>
+    <loc>https://angaza-elimu.github.io/offline/contribution-guidelines/contribution/</loc>
+  </url>
   
-    <url>
-      <loc>https://localhost:1313/angaza-repositories/offline/getting-started/getting-started/</loc>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    </url>
-    
+  <url>
+    <loc>https://angaza-elimu.github.io/model/selection/</loc>
+  </url>
   
+  <url>
+    <loc>https://angaza-elimu.github.io/model/validation/</loc>
+  </url>
   
-    <url>
-      <loc>https://localhost:1313/angaza-repositories/steam/getting-started/getting-started/</loc>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    </url>
-    
+  <url>
+    <loc>https://angaza-elimu.github.io/offline/getting-started/getting-started/</loc>
+  </url>
   
+  <url>
+    <loc>https://angaza-elimu.github.io/steam/getting-started/getting-started/</loc>
+  </url>
   
-    <url>
-      <loc>https://localhost:1313/angaza-repositories/mobile/introduction/introduction/</loc>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    </url>
-    
+  <url>
+    <loc>https://angaza-elimu.github.io/mobile/introduction/introduction/</loc>
+  </url>
   
+  <url>
+    <loc>https://angaza-elimu.github.io/model/api/</loc>
+  </url>
   
-    <url>
-      <loc>https://localhost:1313/angaza-repositories/mobile/syntax/syntax/</loc>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    </url>
-    
+  <url>
+    <loc>https://angaza-elimu.github.io/offline/</loc>
+  </url>
   
+  <url>
+    <loc>https://angaza-elimu.github.io/model/tests/</loc>
+  </url>
   
-    <url>
-      <loc>https://localhost:1313/angaza-repositories/steam/syntax/syntax/</loc>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    </url>
-    
+  <url>
+    <loc>https://angaza-elimu.github.io/steam/</loc>
+  </url>
+  
+  <url>
+    <loc>https://angaza-elimu.github.io/mobile/syntax/syntax/</loc>
+  </url>
+  
+  <url>
+    <loc>https://angaza-elimu.github.io/steam/syntax/syntax/</loc>
+  </url>
+  
+  <url>
+    <loc>https://angaza-elimu.github.io/tags/</loc>
+  </url>
   
 </urlset>

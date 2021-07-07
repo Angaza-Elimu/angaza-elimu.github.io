@@ -1,6 +1,6 @@
 baseURL = "https://angaza-elimu.github.io/"
 languageCode = "en-us"
 
-theme = "color-your-world"
+theme = "hugo-theme-learn"
 publishDir = "docs"
-
+themeVariant = "white"
