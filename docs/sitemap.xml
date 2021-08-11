@@ -16,6 +16,10 @@
   </url>
   
   <url>
+    <loc>https://angaza-elimu.github.io/api/</loc>
+  </url>
+  
+  <url>
     <loc>https://angaza-elimu.github.io/model/automation/</loc>
   </url>
   
@@ -77,6 +81,10 @@
   
   <url>
     <loc>https://angaza-elimu.github.io/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>https://angaza-elimu.github.io/teachers/</loc>
   </url>
   
 </urlset>
