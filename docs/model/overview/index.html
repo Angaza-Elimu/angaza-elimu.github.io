@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Getting Started :: </title>
+    <title>Overview :: </title>
 
     
     <link href="/css/nucleus.css?1636928437" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/steam/getting-started/getting-started/">
+  <body class="" data-url="/model/overview/">
     <nav id="sidebar" class="">
 
 
@@ -86,7 +86,7 @@
   
     
     <li data-nav-id="/model/" title="Adaptive Learning Model" class="dd-item
-        
+        parent
         
         
         ">
@@ -115,8 +115,8 @@
   
     
     <li data-nav-id="/model/overview/" title="Overview" class="dd-item
-        
-        
+        parent
+        active
         
         ">
       <a href="/model/overview/">
@@ -655,7 +655,7 @@
   
     
     <li data-nav-id="/steam/" title="Steam Web Application" class="dd-item
-        parent
+        
         
         
         ">
@@ -681,7 +681,7 @@
  
   
     
-      <li data-nav-id="/steam/getting-started/getting-started/" title="Getting Started" class="dd-item active">
+      <li data-nav-id="/steam/getting-started/getting-started/" title="Getting Started" class="dd-item ">
         <a href="/steam/getting-started/getting-started/">
         Getting Started
         
@@ -794,7 +794,7 @@
             
           
           
-            <a href='/'></a> > <a href='/steam/'>Steam Web Application</a> > Getting Started
+            <a href='/'></a> > <a href='/model/'>Adaptive Learning Model</a> > Overview
           
         
           
@@ -809,15 +809,12 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#a-module-that-leverages-the-angaza-science-tech-arts-and-mathematics-content">A module that leverages the Angaza Science, Tech, Arts and Mathematics content</a></li>
-    <li><a href="#tech">Tech</a></li>
-    <li><a href="#installation">Installation</a></li>
-    <li><a href="#development">Development</a>
+    <li>
       <ul>
-        <li></li>
+        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="#usage">USAGE</a></li>
       </ul>
     </li>
-    <li><a href="#license">License</a></li>
   </ul>
 </nav>
     </div>
@@ -835,63 +832,67 @@
           
             <h1>
               
-              Getting Started
+              Overview
             </h1>
           
 
         
 
 
-<h1 id="angaza-steam-platform">ANGAZA STEAM PLATFORM</h1>
-<h2 id="a-module-that-leverages-the-angaza-science-tech-arts-and-mathematics-content">A module that leverages the Angaza Science, Tech, Arts and Mathematics content</h2>
-<p>Angaza Steam is a cross-device compatible web platform site used to distribute course content on the Steam topics.</p>
-<h2 id="tech">Tech</h2>
-<p>Angaza Steam Module uses a number of open source projects to work properly:</p>
+
+	<p>Welcome to the Angaza adaptive learning library documentation.</p>
+<p>This project is develoeped by Angaza Elimu and provides a modernized method of categorizing students and predicting perfomance periodically
+based on their engagement with the Angaza System and any other system that implements similar features.
+The main objective was to build a tool that supplements the perfomance of assessment recommendations on the Angaza Elimu E-Learning Platform.</p>
+<h3 id="how-it-works">How it works</h3>
+<p>The model is built as a standalone django application with which specific digits based on the following features are sent.
+The features used in the situation are the following: -</p>
 <ul>
-<li><a href="https://angular.io">Angular</a> - HTML enhanced for web apps!</li>
-<li><a href="https://https://www.npmjs.com/">npm</a> - Used as a package manager</li>
-<li><a href="https://laravel.com/">Laravel</a> - PHP framework used for retrieval and serving of content</li>
-<li><a href="https://getcomposer.org">Composer</a> - PHP package manager</li>
+<li>Resource Access  (How much a student interacts with platform resources such as notes and assessments)</li>
+<li>Announcements View (Count of Student Interaction and acting on Platform Notifications)</li>
+<li>Absence (The number of times a student has been absent from the platform for more than x number of days)</li>
+<li>Discussion (The number of times a student asks questions using a discussions feature / Class Forum feature engaging with fellow classmates)</li>
 </ul>
-<p>And of course Angaza Steam itself is open source with a <a href="https://github.com/Angaza-Elimu/steam-web">public repository</a>
-on GitHub.</p>
-<h2 id="installation">Installation</h2>
-<p>Angaza Steam requires <a href="https://nodejs.org/">Node.js</a> v10+ to run.</p>
-<p>Install the dependencies and devDependencies and start the server.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git clone https://github.com/Angaza-Elimu/steam-web
-cd steam-web
-npm i
-ng serve
-</code></pre></div><p>Verify the server started by navigating to your server address in
-your preferred browser.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">http://localhost:4200
-</code></pre></div><p>For production environments&hellip;</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ng build
-cd dist
-</code></pre></div><p>to access the production build</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ng build
-cd dist
-</code></pre></div><p>this will take you to the directory in which the production files have been generated.</p>
-<h2 id="development">Development</h2>
-<p>Want to contribute? Great!</p>
-<p>For a great place to start visit our repositories and have a look at the feature requests and the issues.</p>
-<p>Fork and create a branch on the feature/issue you will be working on.</p>
-<p>Create a pull request&hellip; we will review and be in contact.</p>
-<p>For other clarifications you can contact <a href="mailto:info@angazaelimu.com">info@angazaelimu.com</a></p>
-<p>Angaza Steam uses Webpack for fast developing.
-Make a change in your file and instantaneously see your updates in the browser!</p>
-<h4 id="building-for-source">Building for source</h4>
-<p>For production release:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ng build --prod
-</code></pre></div><blockquote>
-<p>Note: <code>--capt-add=SYS-ADMIN</code> is required for PDF rendering.</p>
-</blockquote>
-<h2 id="license">License</h2>
-<p>LGPL 3.0</p>
-<p><strong>Happy Learning</strong></p>
+<p>An example on the raw request sent to the API is shown below</p>
+<pre><code>    {
+        &quot;resource_access&quot;: 77,
+        &quot;announcements_view&quot;:14,
+        &quot;abscence&quot;:0,
+        &quot;discussion&quot;:28,
+        &quot;raised_hands&quot;:50
+    }
+</code></pre>
+<p>and a sample response from the system per student gives a specific level according to the bloom&rsquo;s taxonomy and the specific standardized values of the request params sent. Example Below:-</p>
+<pre><code>    {
+        &quot;error&quot;: &quot;0&quot;,
+        &quot;message&quot;: &quot;Successful&quot;,
+        &quot;prediction&quot;: [
+            &quot;M&quot;
+        ],
+        &quot;scaled&quot;: [
+            [
+                0.10361541892477977,
+                0.667523991293091,
+                -0.8624863170229388,
+                -0.5348551391185068,
+                -0.7993900113485922
+            ]
+        ]
+    }
+</code></pre>
+<h3 id="usage">USAGE</h3>
+<p>This classification enables one to have a map of expected students perfomance and what they need to do in order to improve on their perfomance.
+It as well predicts the class of the student according to current engagement and the expected outcome after a specific learning period.
+It is generally measured against their classroom perfomance and associated with the Bloom&rsquo;s taxonomy pyramid for learning. Therefore it helps suggest content according to the
+Bloom&rsquo;s taxonomy pyramid by halving the six classes into 3 general ones L(low - bottom two classes), M(mid - Middle two classes), H(high - Top two classes).
+This helps track student progress when ran on the student database regularly. An ideal outcome would be a rise between the 3 classes. However desirably we would be able to flag
+the students the model predicts would not do so well.</p>
 
 
-<footer class="footline">
+
+
+
+<footer class=" footline" >
 	
 </footer>
 
@@ -926,8 +927,6 @@ Make a change in your file and instantaneously see your updates in the browser!<
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -943,6 +942,7 @@ Make a change in your file and instantaneously see your updates in the browser!<
             
             
                 
+                    
                     
                 
                 
@@ -960,53 +960,9 @@ Make a change in your file and instantaneously see your updates in the browser!<
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
                         
                     
-                    
-
-                    
-                        
-            
-            
-                
-                    
                 
                 
 
@@ -1014,41 +970,6 @@ Make a change in your file and instantaneously see your updates in the browser!<
                     
                     
 
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
             
         
@@ -1135,6 +1056,88 @@ Make a change in your file and instantaneously see your updates in the browser!<
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
             
         
                     
@@ -1271,7 +1274,6 @@ Make a change in your file and instantaneously see your updates in the browser!<
             
                 
                     
-                    
                 
                 
 
@@ -1284,7 +1286,6 @@ Make a change in your file and instantaneously see your updates in the browser!<
             
             
                 
-                    
                     
                 
                 
@@ -1301,9 +1302,6 @@ Make a change in your file and instantaneously see your updates in the browser!<
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1344,10 +1342,10 @@ Make a change in your file and instantaneously see your updates in the browser!<
 	 
 	 
 		
-			<a class="nav nav-prev" href="/steam/" title="Steam Web Application"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/model/" title="Adaptive Learning Model"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/steam/syntax/syntax/" title="Syntax Documentation" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/model/architecture/" title="Architecture" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1379,4 +1377,3 @@ Make a change in your file and instantaneously see your updates in the browser!<
 
   </body>
 </html>
-
