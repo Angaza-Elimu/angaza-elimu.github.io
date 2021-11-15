@@ -14,8 +14,10 @@ The system decides which content to show the learner based on the trained data f
 ## Table of Contents
 
 <!-- * [Introduction](#updating-to-new-releases) -->
-* [Feature Selection]()
-* [Feature Validation]()
-* [Automation Pipeline]()
-* [APIs]()
-* [Setting Up]()
+
+* [Overview](https://angaza-elimu.github.io/model/overview/)
+* [Architecture](https://angaza-elimu.github.io/model/architecture/)
+* [Installation](https://angaza-elimu.github.io/model/installation/)
+* [Data and Feature Selection](https://angaza-elimu.github.io/model/data/)
+* [Contributing Guide](https://angaza-elimu.github.io/model/contributing/)
+* [Miscellaneous](https://angaza-elimu.github.io/model/misc/automation)
