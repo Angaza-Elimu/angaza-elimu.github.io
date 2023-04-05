@@ -2,7 +2,7 @@
 title: "Installation & Running Guide" 
 weight: 7
 draft: false
-pre : "<b>3. </b>"
+pre : "<b>4. </b>"
 ---
 
 The main option to install the library is downloading it from github from the following [link](https://github.com/Angaza-Elimu/learning_recommendation).

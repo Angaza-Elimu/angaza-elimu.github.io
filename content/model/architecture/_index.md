@@ -2,7 +2,7 @@
 title: "Architecture" 
 weight: 6
 draft: false
-pre : "<b>2. </b>"
+pre : "<b>3. </b>"
 ---
 
 The library is built in python3 using the Django Rest Framework to host APIs.

@@ -2,7 +2,7 @@
 title: "Miscellaneous" 
 weight: 10
 draft: false
-pre : "<b>6. </b>"
+pre : "<b>7. </b>"
 ---
 
 Under the miscellaneous guide we have the following sections.

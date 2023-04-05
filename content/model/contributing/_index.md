@@ -2,7 +2,7 @@
 title: "Contributing Guide" 
 weight: 9
 draft: false
-pre : "<b>5. </b>"
+pre : "<b>6. </b>"
 ---
 
 ## Getting Started
